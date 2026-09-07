@@ -317,18 +317,55 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
     );
 
     sectionTitle(ui.livedTitle);
-    const cities = PROFILE.locations.map((place) => {
-      const city = t(place.city);
-      if (!place.end && place.start) {
-        return `${city} (${ui.currentCity}, ${formatDuration(monthsBetween(place.start, yearMonthOf()), language)})`;
+    (function drawLocations() {
+      const places = PROFILE.locations;
+      const n = places.length;
+      const colW = CONTENT_W / n;
+      const citySize = 10;
+      const metaSize = SIZE.small;
+      const columns = places.map((place) => {
+        const city = t(place.city);
+        const year = place.start ? place.start.slice(0, 4) : '';
+        const extra = !place.end && place.start
+          ? `${ui.currentCity} · ${formatDuration(monthsBetween(place.start, yearMonthOf()), language)}`
+          : '';
+        return {
+          city,
+          year,
+          extra,
+          cityH: heightOf(city, citySize, colW, BOLD),
+          yearH: heightOf(year, metaSize, colW),
+          extraH: extra ? heightOf(extra, metaSize, colW) : 0,
+        };
+      });
+      const cityRow = Math.max(...columns.map((col) => col.cityH));
+      const yearRow = Math.max(...columns.map((col) => col.yearH));
+      const extraRow = Math.max(...columns.map((col) => col.extraH));
+      const blockH = 16 + cityRow + yearRow + extraRow + 6;
+      startBlock(blockH);
+
+      const centers = columns.map((_, index) => MX + colW * index + colW / 2);
+      doc.save();
+      doc.strokeColor(BLUE).lineWidth(1.2);
+      doc.moveTo(centers[0], y + 4).lineTo(centers[centers.length - 1], y + 4).stroke();
+      for (const cx of centers) {
+        doc.circle(cx, y + 4, 2.6).fillAndStroke(BLUE, BLUE);
       }
-      return city;
-    });
-    paragraph(cities.join('   →   '), { size: SIZE.body, gap: 4 });
-    paragraph(
-      PROFILE.locations.map((place) => (place.start ? place.start.slice(0, 4) : '')).filter(Boolean).join('          '),
-      { size: SIZE.small, color: MUTED, gap: 2 }
-    );
+      doc.restore();
+      y += 14;
+
+      columns.forEach((col, index) => {
+        const x = MX + colW * index;
+        doc.font(BOLD).fontSize(citySize).fillColor(INK);
+        doc.text(col.city, x, y, { width: colW, align: 'center' });
+        doc.font(BODY).fontSize(metaSize).fillColor(MUTED);
+        doc.text(col.year, x, y + cityRow + 1, { width: colW, align: 'center' });
+        if (col.extra) {
+          doc.text(col.extra, x, y + cityRow + yearRow + 2, { width: colW, align: 'center' });
+        }
+      });
+      y += cityRow + yearRow + extraRow + 8;
+    })();
 
     sectionTitle(ui.skillsTitle);
     const labelW = 108;
@@ -347,13 +384,24 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
     sectionTitle(ui.experienceTitle);
     for (const company of PROFILE.experience) drawCompany(company);
 
-    const educationHeight =
-      40 +
-      heightOf(t(PROFILE.education.award), SIZE.company, CONTENT_W, BOLD) +
-      heightOf(`${t(PROFILE.education.institutionAtAward)}  ·  ${t(PROFILE.education.institutionCurrent)} (${ui.currentTitle})`, SIZE.body) +
-      heightOf(t(PROFILE.education.structure), SIZE.body) +
-      50;
-    startBlock(educationHeight);
+    function measureEducation() {
+      const institution = `${t(PROFILE.education.institutionAtAward)}  ·  ${t(PROFILE.education.institutionCurrent)} (${ui.currentTitle})`;
+      const meta = `${t(PROFILE.education.campus)}  ·  ${formatRange(PROFILE.education.start, PROFILE.education.end, ui.present, language)}  ·  ${t(PROFILE.education.result)}`;
+      let h = 38;
+      h += heightOf(t(PROFILE.education.award), SIZE.company, CONTENT_W, BOLD) + 4;
+      h += heightOf(institution, SIZE.body) + 4;
+      h += heightOf(meta, SIZE.meta) + 5;
+      h += heightOf(t(PROFILE.education.structure), SIZE.body) + 8;
+      h += 38;
+      for (const project of PROFILE.educationProjects) {
+        h += heightOf(`${project.name}  ·  ${project.language}  ·  ${ui.grade} ${project.grade}`, SIZE.role, CONTENT_W, BOLD) + 3;
+        h += heightOf(t(project.description), SIZE.body) + 3;
+        if (project.url) h += heightOf(project.url, SIZE.small) + 10;
+      }
+      return h + 8;
+    }
+
+    startBlock(measureEducation());
     sectionTitle(ui.educationTitle);
     paragraph(t(PROFILE.education.award), { size: SIZE.company, font: BOLD, gap: 4 });
     paragraph(
@@ -368,11 +416,6 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
 
     sectionTitle(ui.educationProjectsTitle);
     for (const project of PROFILE.educationProjects) {
-      const block =
-        heightOf(`${project.name}  ·  ${project.language}  ·  ${ui.grade} ${project.grade}`, SIZE.role, CONTENT_W, BOLD) +
-        heightOf(t(project.description), SIZE.body) +
-        24;
-      startBlock(block);
       paragraph(`${project.name}  ·  ${project.language}  ·  ${ui.grade} ${project.grade}`, {
         size: SIZE.role,
         font: BOLD,
