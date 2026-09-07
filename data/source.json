@@ -1,0 +1,1554 @@
+{
+  "person": {
+    "name": "Thomas Geraghty",
+    "location": {
+      "en": "Stockholm, Sweden",
+      "sv": "Stockholm, Sverige"
+    },
+    "photo": "images/portrait.jpg",
+    "photoSquare": "images/portrait-square.jpg",
+    "email": "thomas.james.geraghty@hotmail.com",
+    "emailSubject": "Enquiry about potential future employment",
+    "phone": "+46761054533",
+    "phoneDisplay": "+46 76 105 45 33",
+    "github": "https://github.com/thethomaseffect",
+    "linkedin": "https://www.linkedin.com/in/thomasjamesgeraghty/"
+  },
+  "workRights": {
+    "rights": [
+      {
+        "id": "eu"
+      },
+      {
+        "id": "uk"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "id": "en",
+      "name": {
+        "en": "English",
+        "sv": "Engelska"
+      }
+    },
+    {
+      "id": "sv",
+      "name": {
+        "en": "Swedish",
+        "sv": "Svenska"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "dublin",
+      "city": {
+        "en": "Dublin",
+        "sv": "Dublin"
+      },
+      "country": {
+        "en": "Ireland",
+        "sv": "Irland"
+      },
+      "start": "2013-06",
+      "end": "2014-06"
+    },
+    {
+      "id": "galway",
+      "city": {
+        "en": "Galway",
+        "sv": "Galway"
+      },
+      "country": {
+        "en": "Ireland",
+        "sv": "Irland"
+      },
+      "start": "2014-06",
+      "end": "2014-11"
+    },
+    {
+      "id": "belfast",
+      "city": {
+        "en": "Belfast",
+        "sv": "Belfast"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "sv": "Storbritannien"
+      },
+      "start": "2015-02",
+      "end": "2016-09"
+    },
+    {
+      "id": "manchester",
+      "city": {
+        "en": "Manchester",
+        "sv": "Manchester"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "sv": "Storbritannien"
+      },
+      "start": "2016-10",
+      "end": "2018-05"
+    },
+    {
+      "id": "london",
+      "city": {
+        "en": "London",
+        "sv": "London"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "sv": "Storbritannien"
+      },
+      "start": "2018-05",
+      "end": "2020-09"
+    },
+    {
+      "id": "stockholm",
+      "city": {
+        "en": "Stockholm",
+        "sv": "Stockholm"
+      },
+      "country": {
+        "en": "Sweden",
+        "sv": "Sverige"
+      },
+      "start": "2022-03",
+      "end": null
+    }
+  ],
+  "skillCatalog": {
+    "typescript": {
+      "label": {
+        "en": "TypeScript",
+        "sv": "TypeScript"
+      },
+      "icon": "typescript",
+      "category": "language"
+    },
+    "javascript": {
+      "label": {
+        "en": "JavaScript",
+        "sv": "JavaScript"
+      },
+      "icon": "javascript",
+      "category": "language"
+    },
+    "nodejs": {
+      "label": {
+        "en": "Node.js",
+        "sv": "Node.js"
+      },
+      "icon": "nodedotjs",
+      "category": "runtime"
+    },
+    "react": {
+      "label": {
+        "en": "React",
+        "sv": "React"
+      },
+      "icon": "react",
+      "category": "frontend"
+    },
+    "redux": {
+      "label": {
+        "en": "Redux",
+        "sv": "Redux"
+      },
+      "icon": "redux",
+      "category": "frontend"
+    },
+    "svelte": {
+      "label": {
+        "en": "Svelte",
+        "sv": "Svelte"
+      },
+      "icon": "svelte",
+      "category": "frontend"
+    },
+    "angularjs": {
+      "label": {
+        "en": "AngularJS",
+        "sv": "AngularJS"
+      },
+      "icon": "angular",
+      "category": "frontend"
+    },
+    "nextjs": {
+      "label": {
+        "en": "Next.js",
+        "sv": "Next.js"
+      },
+      "icon": "nextdotjs",
+      "category": "frontend"
+    },
+    "vite": {
+      "label": {
+        "en": "Vite",
+        "sv": "Vite"
+      },
+      "icon": "vite",
+      "category": "frontend"
+    },
+    "playwright": {
+      "label": {
+        "en": "Playwright",
+        "sv": "Playwright"
+      },
+      "icon": null,
+      "category": "quality"
+    },
+    "css": {
+      "label": {
+        "en": "CSS",
+        "sv": "CSS"
+      },
+      "icon": "css3",
+      "category": "frontend"
+    },
+    "styled-components": {
+      "label": {
+        "en": "styled-components",
+        "sv": "styled-components"
+      },
+      "icon": "styledcomponents",
+      "category": "frontend"
+    },
+    "storybook": {
+      "label": {
+        "en": "Storybook",
+        "sv": "Storybook"
+      },
+      "icon": "storybook",
+      "category": "frontend"
+    },
+    "jest": {
+      "label": {
+        "en": "Jest",
+        "sv": "Jest"
+      },
+      "icon": "jest",
+      "category": "quality"
+    },
+    "cypress": {
+      "label": {
+        "en": "Cypress",
+        "sv": "Cypress"
+      },
+      "icon": "cypress",
+      "category": "quality"
+    },
+    "tailwindcss": {
+      "label": {
+        "en": "Tailwind CSS",
+        "sv": "Tailwind CSS"
+      },
+      "icon": "tailwindcss",
+      "category": "frontend"
+    },
+    "materialui": {
+      "label": {
+        "en": "Material UI",
+        "sv": "Material UI"
+      },
+      "icon": "mui",
+      "category": "frontend"
+    },
+    "express": {
+      "label": {
+        "en": "Express",
+        "sv": "Express"
+      },
+      "icon": "express",
+      "category": "backend"
+    },
+    "aws": {
+      "label": {
+        "en": "AWS",
+        "sv": "AWS"
+      },
+      "icon": "amazonaws",
+      "category": "cloud"
+    },
+    "lambda": {
+      "label": {
+        "en": "AWS Lambda",
+        "sv": "AWS Lambda"
+      },
+      "icon": "awslambda",
+      "category": "cloud"
+    },
+    "aws-cdk": {
+      "label": {
+        "en": "AWS CDK",
+        "sv": "AWS CDK"
+      },
+      "icon": "amazonaws",
+      "category": "cloud"
+    },
+    "cloudformation": {
+      "label": {
+        "en": "CloudFormation",
+        "sv": "CloudFormation"
+      },
+      "icon": "amazonaws",
+      "category": "cloud"
+    },
+    "cicd": {
+      "label": {
+        "en": "CI/CD",
+        "sv": "CI/CD"
+      },
+      "icon": null,
+      "category": "devops"
+    },
+    "feature-flags": {
+      "label": {
+        "en": "Feature flags",
+        "sv": "Feature flags"
+      },
+      "icon": null,
+      "category": "tooling"
+    },
+    "analytics": {
+      "label": {
+        "en": "Analytics",
+        "sv": "Analytics"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "cloudwatch": {
+      "label": {
+        "en": "CloudWatch",
+        "sv": "CloudWatch"
+      },
+      "icon": "amazoncloudwatch",
+      "category": "cloud"
+    },
+    "docker": {
+      "label": {
+        "en": "Docker",
+        "sv": "Docker"
+      },
+      "icon": "docker",
+      "category": "devops"
+    },
+    "kubernetes": {
+      "label": {
+        "en": "Kubernetes",
+        "sv": "Kubernetes"
+      },
+      "icon": "kubernetes",
+      "category": "devops"
+    },
+    "terraform": {
+      "label": {
+        "en": "Terraform",
+        "sv": "Terraform"
+      },
+      "icon": "terraform",
+      "category": "devops"
+    },
+    "grafana": {
+      "label": {
+        "en": "Grafana",
+        "sv": "Grafana"
+      },
+      "icon": "grafana",
+      "category": "devops"
+    },
+    "github-actions": {
+      "label": {
+        "en": "GitHub Actions",
+        "sv": "GitHub Actions"
+      },
+      "icon": "githubactions",
+      "category": "devops"
+    },
+    "argo-cd": {
+      "label": {
+        "en": "Argo CD",
+        "sv": "Argo CD"
+      },
+      "icon": "argo",
+      "category": "devops"
+    },
+    "git": {
+      "label": {
+        "en": "Git",
+        "sv": "Git"
+      },
+      "icon": "git",
+      "category": "devops"
+    },
+    "sentry": {
+      "label": {
+        "en": "Sentry",
+        "sv": "Sentry"
+      },
+      "icon": "sentry",
+      "category": "devops"
+    },
+    "postgresql": {
+      "label": {
+        "en": "PostgreSQL",
+        "sv": "PostgreSQL"
+      },
+      "icon": "postgresql",
+      "category": "data"
+    },
+    "mysql": {
+      "label": {
+        "en": "MySQL",
+        "sv": "MySQL"
+      },
+      "icon": "mysql",
+      "category": "data"
+    },
+    "xmpp": {
+      "label": {
+        "en": "XMPP",
+        "sv": "XMPP"
+      },
+      "icon": "xmpp",
+      "category": "backend"
+    },
+    "mongodb": {
+      "label": {
+        "en": "MongoDB",
+        "sv": "MongoDB"
+      },
+      "icon": "mongodb",
+      "category": "data"
+    },
+    "elasticsearch": {
+      "label": {
+        "en": "Elasticsearch",
+        "sv": "Elasticsearch"
+      },
+      "icon": "elasticsearch",
+      "category": "data"
+    },
+    "kafka": {
+      "label": {
+        "en": "Apache Kafka",
+        "sv": "Apache Kafka"
+      },
+      "icon": "apachekafka",
+      "category": "data"
+    },
+    "python": {
+      "label": {
+        "en": "Python",
+        "sv": "Python"
+      },
+      "icon": "python",
+      "category": "language"
+    },
+    "java": {
+      "label": {
+        "en": "Java",
+        "sv": "Java"
+      },
+      "icon": "openjdk",
+      "category": "language"
+    },
+    "csharp": {
+      "label": {
+        "en": "C#",
+        "sv": "C#"
+      },
+      "icon": "dotnet",
+      "category": "language"
+    },
+    "cpp": {
+      "label": {
+        "en": "C++",
+        "sv": "C++"
+      },
+      "icon": "cplusplus",
+      "category": "language"
+    },
+    "rust": {
+      "label": {
+        "en": "Rust",
+        "sv": "Rust"
+      },
+      "icon": "rust",
+      "category": "language"
+    },
+    "php": {
+      "label": {
+        "en": "PHP",
+        "sv": "PHP"
+      },
+      "icon": "php",
+      "category": "language"
+    },
+    "babel": {
+      "label": {
+        "en": "Babel",
+        "sv": "Babel"
+      },
+      "icon": "babel",
+      "category": "tooling"
+    },
+    "jwt": {
+      "label": {
+        "en": "JWT",
+        "sv": "JWT"
+      },
+      "icon": "jsonwebtokens",
+      "category": "backend"
+    },
+    "microservices": {
+      "label": {
+        "en": "Microservices",
+        "sv": "Mikrotjänster"
+      },
+      "icon": null,
+      "category": "architecture"
+    },
+    "github": {
+      "label": {
+        "en": "GitHub",
+        "sv": "GitHub"
+      },
+      "icon": "github",
+      "category": "devops"
+    },
+    "bitbucket": {
+      "label": {
+        "en": "Bitbucket",
+        "sv": "Bitbucket"
+      },
+      "icon": "bitbucket",
+      "category": "devops"
+    },
+    "figma": {
+      "label": {
+        "en": "Figma",
+        "sv": "Figma"
+      },
+      "icon": "figma",
+      "category": "frontend"
+    },
+    "cursor": {
+      "label": {
+        "en": "Cursor",
+        "sv": "Cursor"
+      },
+      "icon": "cursor",
+      "category": "tooling"
+    },
+    "e2e": {
+      "label": {
+        "en": "E2E testing",
+        "sv": "E2E-testning"
+      },
+      "icon": null,
+      "category": "quality"
+    },
+    "protractor": {
+      "label": {
+        "en": "Protractor",
+        "sv": "Protractor"
+      },
+      "icon": "protractor",
+      "category": "quality"
+    },
+    "facebook-api": {
+      "label": {
+        "en": "Facebook Graph API",
+        "sv": "Facebook Graph API"
+      },
+      "icon": "facebook",
+      "category": "backend"
+    },
+    "html": {
+      "label": {
+        "en": "HTML",
+        "sv": "HTML"
+      },
+      "icon": "html5",
+      "category": "frontend"
+    },
+    "jquery": {
+      "label": {
+        "en": "jQuery",
+        "sv": "jQuery"
+      },
+      "icon": "jquery",
+      "category": "frontend"
+    },
+    "selenium": {
+      "label": {
+        "en": "Selenium",
+        "sv": "Selenium"
+      },
+      "icon": "selenium",
+      "category": "quality"
+    },
+    "jenkins": {
+      "label": {
+        "en": "Jenkins",
+        "sv": "Jenkins"
+      },
+      "icon": "jenkins",
+      "category": "devops"
+    },
+    "gulp": {
+      "label": {
+        "en": "gulp",
+        "sv": "gulp"
+      },
+      "icon": "gulp",
+      "category": "tooling"
+    },
+    "virtuoso": {
+      "label": {
+        "en": "Virtuoso",
+        "sv": "Virtuoso"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "dbpedia-spotlight": {
+      "label": {
+        "en": "DBpedia Spotlight",
+        "sv": "DBpedia Spotlight"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "kaldi": {
+      "label": {
+        "en": "Kaldi",
+        "sv": "Kaldi"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "linux": {
+      "label": {
+        "en": "Linux",
+        "sv": "Linux"
+      },
+      "icon": "linux",
+      "category": "platform"
+    },
+    "sparql": {
+      "label": {
+        "en": "SPARQL",
+        "sv": "SPARQL"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "jsonld": {
+      "label": {
+        "en": "JSON-LD",
+        "sv": "JSON-LD"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "rdf": {
+      "label": {
+        "en": "RDF",
+        "sv": "RDF"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "owl": {
+      "label": {
+        "en": "OWL",
+        "sv": "OWL"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "aspnet": {
+      "label": {
+        "en": "ASP.NET",
+        "sv": "ASP.NET"
+      },
+      "icon": "dotnet",
+      "category": "backend"
+    },
+    "sqlserver": {
+      "label": {
+        "en": "SQL Server",
+        "sv": "SQL Server"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "office": {
+      "label": {
+        "en": "Microsoft Office",
+        "sv": "Microsoft Office"
+      },
+      "icon": null,
+      "category": "platform"
+    },
+    "flow": {
+      "label": {
+        "en": "Flow",
+        "sv": "Flow"
+      },
+      "icon": null,
+      "category": "tooling"
+    },
+    "planout": {
+      "label": {
+        "en": "Planout",
+        "sv": "Planout"
+      },
+      "icon": null,
+      "category": "quality"
+    },
+    "wordpress": {
+      "label": {
+        "en": "WordPress",
+        "sv": "WordPress"
+      },
+      "icon": "wordpress",
+      "category": "frontend"
+    },
+    "sharepoint": {
+      "label": {
+        "en": "SharePoint",
+        "sv": "SharePoint"
+      },
+      "icon": null,
+      "category": "platform"
+    },
+    "vercel": {
+      "label": {
+        "en": "Vercel",
+        "sv": "Vercel"
+      },
+      "icon": "vercel",
+      "category": "cloud"
+    },
+    "linked-data": {
+      "label": {
+        "en": "Linked Data",
+        "sv": "Länkade data"
+      },
+      "icon": null,
+      "category": "data"
+    },
+    "rest": {
+      "label": {
+        "en": "REST APIs",
+        "sv": "REST-API:er"
+      },
+      "icon": null,
+      "category": "backend"
+    },
+    "iot": {
+      "label": {
+        "en": "IoT",
+        "sv": "IoT"
+      },
+      "icon": null,
+      "category": "platform"
+    },
+    "claude": {
+      "label": {
+        "en": "Claude / LLM tooling",
+        "sv": "Claude / LLM-verktyg"
+      },
+      "icon": "anthropic",
+      "category": "tooling"
+    }
+  },
+  "experience": [
+    {
+      "id": "sambla",
+      "company": {
+        "en": "Sambla Group AB",
+        "sv": "Sambla Group AB"
+      },
+      "logo": "images/logos/sambla.png",
+      "url": "https://www.samblagroup.com",
+      "location": {
+        "en": "Stockholm, Sweden",
+        "sv": "Stockholm, Sverige"
+      },
+      "featured": true,
+      "roles": [
+        {
+          "id": "sambla-senior",
+          "title": {
+            "en": "Senior Developer",
+            "sv": "Senior utvecklare"
+          },
+          "start": "2026-01",
+          "end": "2026-04",
+          "skills": [
+            "typescript",
+            "javascript",
+            "react",
+            "nodejs",
+            "nextjs",
+            "aws",
+            "aws-cdk",
+            "cloudformation",
+            "docker",
+            "microservices",
+            "github-actions",
+            "feature-flags",
+            "analytics",
+            "cloudwatch",
+            "sentry",
+            "claude",
+            "figma",
+            "css",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lolo",
+      "company": {
+        "en": "Lolo Company AB",
+        "sv": "Lolo Company AB"
+      },
+      "logo": "images/logos/lolo.png",
+      "url": "https://lolo.co",
+      "location": {
+        "en": "Stockholm, Sweden",
+        "sv": "Stockholm, Sverige"
+      },
+      "featured": true,
+      "roles": [
+        {
+          "id": "lolo-senior",
+          "title": {
+            "en": "Senior Software Engineer",
+            "sv": "Senior mjukvaruingenjör"
+          },
+          "start": "2025-04",
+          "end": "2025-08",
+          "skills": [
+            "microservices",
+            "kafka",
+            "iot",
+            "typescript",
+            "javascript",
+            "nodejs",
+            "argo-cd",
+            "kubernetes",
+            "docker",
+            "terraform",
+            "grafana",
+            "postgresql",
+            "cursor",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ronja",
+      "company": {
+        "en": "Ronja Technologies AB",
+        "sv": "Ronja Technologies AB"
+      },
+      "logo": "images/logos/ronja.png",
+      "url": "https://ronja.tech",
+      "location": {
+        "en": "Stockholm, Sweden",
+        "sv": "Stockholm, Sverige"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "ronja-frontend",
+          "title": {
+            "en": "Frontend Software Engineer",
+            "sv": "Frontendutvecklare"
+          },
+          "start": "2024-12",
+          "end": "2025-01",
+          "skills": [
+            "svelte",
+            "typescript",
+            "javascript",
+            "tailwindcss",
+            "css",
+            "vite",
+            "playwright",
+            "github-actions",
+            "nodejs",
+            "figma",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career-break-novel",
+      "kind": "career-break",
+      "company": {
+        "en": "Career break",
+        "sv": "Karriärpaus"
+      },
+      "logo": null,
+      "url": null,
+      "location": {
+        "en": "Stockholm, Sweden",
+        "sv": "Stockholm, Sverige"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "novel-writing",
+          "title": {
+            "en": "Novel writing",
+            "sv": "Romanförfattande"
+          },
+          "start": "2023-08",
+          "end": "2024-11",
+          "skills": []
+        }
+      ]
+    },
+    {
+      "id": "regent",
+      "company": {
+        "en": "Regent AB",
+        "sv": "Regent AB"
+      },
+      "logo": "images/logos/regent.png",
+      "url": "https://www.regent.se",
+      "location": {
+        "en": "Stockholm, Sweden",
+        "sv": "Stockholm, Sverige"
+      },
+      "featured": true,
+      "roles": [
+        {
+          "id": "regent-consultant",
+          "title": {
+            "en": "Senior Consultant",
+            "sv": "Senior konsult"
+          },
+          "start": "2022-03",
+          "end": "2023-07",
+          "skills": [
+            "typescript",
+            "javascript",
+            "react",
+            "redux",
+            "css",
+            "styled-components",
+            "nodejs",
+            "jest",
+            "cypress",
+            "storybook",
+            "aws",
+            "docker",
+            "figma",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career-break-poc",
+      "kind": "career-break",
+      "company": {
+        "en": "Career break",
+        "sv": "Karriärpaus"
+      },
+      "logo": null,
+      "url": null,
+      "location": {
+        "en": "Remote",
+        "sv": "Distans"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "secret-startup-poc",
+          "title": {
+            "en": "Stealth startup POC development",
+            "sv": "Stealth startup-POC"
+          },
+          "start": "2020-10",
+          "end": "2022-02",
+          "skills": [
+            "nextjs",
+            "react",
+            "javascript",
+            "css",
+            "nodejs",
+            "vercel",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pando",
+      "company": {
+        "en": "Forward Health / Pando",
+        "sv": "Forward Health / Pando"
+      },
+      "logo": "images/logos/pando.png",
+      "url": "https://www.hellopando.com",
+      "location": {
+        "en": "London, United Kingdom",
+        "sv": "London, Storbritannien"
+      },
+      "featured": true,
+      "roles": [
+        {
+          "id": "pando-lead",
+          "title": {
+            "en": "Backend Lead",
+            "sv": "Backendledare"
+          },
+          "start": "2020-01",
+          "end": "2020-09",
+          "skills": [
+            "nodejs",
+            "typescript",
+            "javascript",
+            "postgresql",
+            "mysql",
+            "express",
+            "rest",
+            "xmpp",
+            "react",
+            "redux",
+            "e2e",
+            "jest",
+            "docker",
+            "terraform",
+            "aws",
+            "css",
+            "git",
+            "github"
+          ]
+        },
+        {
+          "id": "pando-senior",
+          "title": {
+            "en": "Senior Backend Engineer",
+            "sv": "Senior backendutvecklare"
+          },
+          "start": "2019-02",
+          "end": "2020-01",
+          "skills": [
+            "nodejs",
+            "typescript",
+            "javascript",
+            "babel",
+            "postgresql",
+            "mysql",
+            "react",
+            "redux",
+            "express",
+            "rest",
+            "xmpp",
+            "jest",
+            "docker",
+            "terraform",
+            "aws",
+            "css",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apolitical",
+      "company": {
+        "en": "Apolitical",
+        "sv": "Apolitical"
+      },
+      "logo": "images/logos/apolitical.png",
+      "url": "https://apolitical.co",
+      "location": {
+        "en": "London, United Kingdom",
+        "sv": "London, Storbritannien"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "apolitical-senior",
+          "title": {
+            "en": "Senior Software Engineer",
+            "sv": "Senior mjukvaruingenjör"
+          },
+          "start": "2018-09",
+          "end": "2018-12",
+          "skills": [
+            "nodejs",
+            "javascript",
+            "typescript",
+            "babel",
+            "express",
+            "react",
+            "redux",
+            "materialui",
+            "css",
+            "flow",
+            "rest",
+            "python",
+            "rust",
+            "php",
+            "wordpress",
+            "mongodb",
+            "jest",
+            "docker",
+            "aws",
+            "planout",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spirable",
+      "company": {
+        "en": "Spirable (formerly Photospire)",
+        "sv": "Spirable (tidigare Photospire)"
+      },
+      "logo": "images/logos/spirable.png",
+      "url": "https://www.spirable.com",
+      "location": {
+        "en": "London, United Kingdom",
+        "sv": "London, Storbritannien"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "spirable-senior",
+          "title": {
+            "en": "Senior Software Engineer",
+            "sv": "Senior mjukvaruingenjör"
+          },
+          "start": "2018-05",
+          "end": "2018-09",
+          "skills": [
+            "angularjs",
+            "javascript",
+            "typescript",
+            "css",
+            "nodejs",
+            "rest",
+            "aws",
+            "lambda",
+            "microservices",
+            "facebook-api",
+            "e2e",
+            "protractor",
+            "jest",
+            "git",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thg",
+      "company": {
+        "en": "The Hut Group (THG)",
+        "sv": "The Hut Group (THG)"
+      },
+      "logo": "images/logos/thg.png",
+      "url": "https://www.thg.com",
+      "location": {
+        "en": "Manchester, United Kingdom",
+        "sv": "Manchester, Storbritannien"
+      },
+      "featured": true,
+      "roles": [
+        {
+          "id": "thg-senior",
+          "title": {
+            "en": "Senior Software Engineer",
+            "sv": "Senior mjukvaruingenjör"
+          },
+          "start": "2016-10",
+          "end": "2018-05",
+          "skills": [
+            "javascript",
+            "html",
+            "css",
+            "jquery",
+            "nodejs",
+            "java",
+            "e2e",
+            "selenium",
+            "jest",
+            "jenkins",
+            "mysql",
+            "git",
+            "bitbucket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbc",
+      "company": {
+        "en": "BBC",
+        "sv": "BBC"
+      },
+      "logo": "images/logos/bbc.png",
+      "url": "https://www.bbc.com",
+      "location": {
+        "en": "United Kingdom",
+        "sv": "Storbritannien"
+      },
+      "featured": true,
+      "roles": [
+        {
+          "id": "bbc-senior",
+          "title": {
+            "en": "Senior Software Engineer",
+            "sv": "Senior mjukvaruingenjör"
+          },
+          "start": "2015-05",
+          "end": "2016-09",
+          "skills": [
+            "nodejs",
+            "javascript",
+            "angularjs",
+            "html",
+            "css",
+            "express",
+            "rest",
+            "mongodb",
+            "elasticsearch",
+            "virtuoso",
+            "dbpedia-spotlight",
+            "linked-data",
+            "docker",
+            "babel",
+            "gulp",
+            "jwt",
+            "kaldi",
+            "e2e",
+            "jest",
+            "aws",
+            "jenkins",
+            "git",
+            "bitbucket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neueda",
+      "company": {
+        "en": "Neueda Consulting",
+        "sv": "Neueda Consulting"
+      },
+      "logo": "images/logos/neueda.png",
+      "url": "https://neueda.com",
+      "location": {
+        "en": "Belfast, United Kingdom",
+        "sv": "Belfast, Storbritannien"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "neueda-engineer",
+          "title": {
+            "en": "Software Engineer",
+            "sv": "Mjukvaruingenjör"
+          },
+          "start": "2015-02",
+          "end": "2015-05",
+          "skills": [
+            "cpp",
+            "javascript",
+            "html",
+            "css",
+            "jquery",
+            "nodejs",
+            "linux",
+            "git",
+            "bitbucket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insight",
+      "company": {
+        "en": "Insight Centre for Data Analytics",
+        "sv": "Insight Centre for Data Analytics"
+      },
+      "logo": "images/logos/insight.png",
+      "url": "https://www.insight-centre.org",
+      "location": {
+        "en": "Galway, Ireland",
+        "sv": "Galway, Irland"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "insight-ra",
+          "title": {
+            "en": "Research Assistant, Sensor Middleware Unit",
+            "sv": "Forskningsassistent, Sensor Middleware Unit"
+          },
+          "start": "2014-06",
+          "end": "2014-11",
+          "skills": [
+            "java",
+            "python",
+            "rest",
+            "linked-data",
+            "rdf",
+            "owl",
+            "sparql",
+            "jsonld",
+            "microservices",
+            "iot",
+            "linux",
+            "git"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "microsoft",
+      "company": {
+        "en": "Microsoft",
+        "sv": "Microsoft"
+      },
+      "logo": "images/logos/microsoft.png",
+      "url": "https://www.microsoft.com",
+      "location": {
+        "en": "Dublin, Ireland",
+        "sv": "Dublin, Irland"
+      },
+      "featured": false,
+      "roles": [
+        {
+          "id": "microsoft-ipe",
+          "title": {
+            "en": "Intern International Project Engineer",
+            "sv": "Praktikant, International Project Engineer"
+          },
+          "start": "2013-06",
+          "end": "2014-06",
+          "skills": [
+            "javascript",
+            "html",
+            "css",
+            "jquery",
+            "nodejs",
+            "csharp",
+            "aspnet",
+            "sqlserver",
+            "sharepoint",
+            "office",
+            "git"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": {
+    "id": "gmit-bsc",
+    "award": {
+      "en": "Bachelor of Science (Honours) in Software Development",
+      "sv": "Bachelor of Science (Honours) i programvaruutveckling"
+    },
+    "awardShort": {
+      "en": "BSc (Hons) Software Development",
+      "sv": "BSc (Hons) programvaruutveckling"
+    },
+    "institutionAtAward": {
+      "en": "Galway-Mayo Institute of Technology (GMIT)",
+      "sv": "Galway-Mayo Institute of Technology (GMIT)"
+    },
+    "institutionCurrent": {
+      "en": "Atlantic Technological University (ATU)",
+      "sv": "Atlantic Technological University (ATU)"
+    },
+    "campus": {
+      "en": "Galway, Ireland",
+      "sv": "Galway, Irland"
+    },
+    "start": "2009-09",
+    "end": "2013-05",
+    "logo": "images/logos/atu.png"
+  },
+  "educationProjects": [
+    {
+      "id": "internet-impression-visualizer",
+      "name": "Internet Impression Visualiser",
+      "grade": "92%",
+      "language": "Java",
+      "url": "https://github.com/thethomaseffect/internet-impression-visualizer",
+      "skills": [
+        "java"
+      ]
+    },
+    {
+      "id": "travers-media-tools",
+      "name": "Travers Media Encoder",
+      "grade": "88%",
+      "language": "Python",
+      "url": "https://github.com/thethomaseffect/travers-media-tools",
+      "skills": [
+        "python"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "github-package-lock-analysis",
+      "name": "github-package-lock-analysis",
+      "url": "https://github.com/thethomaseffect/github-package-lock-analysis",
+      "skills": [
+        "typescript",
+        "javascript",
+        "github-actions",
+        "nodejs"
+      ],
+      "stars": 1
+    },
+    {
+      "id": "for-sale",
+      "name": "for-sale",
+      "url": "https://github.com/thethomaseffect/for-sale",
+      "live": "https://thethomaseffect.github.io/for-sale/",
+      "skills": [
+        "javascript",
+        "react",
+        "css",
+        "github-actions"
+      ],
+      "stars": 0
+    },
+    {
+      "id": "sunbro",
+      "name": "Sunbro.js",
+      "url": "https://github.com/thethomaseffect/Sunbro.js",
+      "skills": [
+        "javascript"
+      ],
+      "stars": 5
+    },
+    {
+      "id": "node-media-synopsis",
+      "name": "node-media-synopsis",
+      "url": "https://github.com/thethomaseffect/node-media-synopsis",
+      "skills": [
+        "javascript",
+        "nodejs"
+      ],
+      "stars": 3
+    },
+    {
+      "id": "financeapi-node",
+      "name": "financeapi-node",
+      "url": "https://github.com/thethomaseffect/financeapi-node",
+      "skills": [
+        "javascript",
+        "nodejs",
+        "express",
+        "mongodb",
+        "rest"
+      ],
+      "stars": 1
+    },
+    {
+      "id": "finance-api",
+      "name": "finance-api",
+      "url": "https://github.com/thethomaseffect/finance-api",
+      "skills": [
+        "java",
+        "rest"
+      ],
+      "stars": 1
+    },
+    {
+      "id": "monogame-mock-sprites",
+      "name": "monogame-mock-sprites",
+      "url": "https://github.com/thethomaseffect/monogame-mock-sprites",
+      "skills": [
+        "csharp"
+      ],
+      "stars": 6
+    },
+    {
+      "id": "inertia-imperial",
+      "name": "Inertia Imperial",
+      "url": null,
+      "skills": [],
+      "stars": 1
+    }
+  ],
+  "showcase": [
+    {
+      "id": "finance-api-java",
+      "name": {
+        "en": "Finance REST API (Java)",
+        "sv": "Finance REST-API (Java)"
+      },
+      "status": "live",
+      "url": "https://github.com/thethomaseffect/finance-api",
+      "skills": [
+        "java",
+        "rest"
+      ]
+    },
+    {
+      "id": "finance-api-node",
+      "name": {
+        "en": "Finance REST API (Node)",
+        "sv": "Finance REST-API (Node)"
+      },
+      "status": "live",
+      "url": "https://github.com/thethomaseffect/financeapi-node",
+      "skills": [
+        "javascript",
+        "nodejs",
+        "express",
+        "mongodb",
+        "rest"
+      ]
+    },
+    {
+      "id": "forum-api",
+      "name": {
+        "en": "Forum REST API",
+        "sv": "Forum-REST-API"
+      },
+      "status": "planned",
+      "url": null,
+      "skills": [
+        "typescript",
+        "nodejs",
+        "rest"
+      ]
+    }
+  ]
+}

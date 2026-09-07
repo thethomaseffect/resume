@@ -1,0 +1,125 @@
+.app {
+  min-height: 100vh;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--blue-solid);
+  color: var(--on-blue);
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 20;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner,
+.main {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0;
+}
+
+.wordmark {
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: var(--blue-deep);
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.segmented {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.segmented button,
+.pdf-button,
+.filter-bar button,
+.tag,
+.contact-chip {
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+}
+
+.segmented button.active {
+  background: var(--blue-solid);
+  color: var(--on-blue);
+}
+
+.pdf-button {
+  background: var(--blue-solid);
+  color: var(--on-blue);
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.extras-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.extras-toggle input {
+  accent-color: var(--blue-solid);
+}
+
+.translation-banner {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 1rem auto 0;
+  padding: 0.75rem 1rem;
+  background: #fff4d6;
+  color: #5c4813;
+  border-radius: 12px;
+}
+
+:root[data-theme='dark'] .translation-banner {
+  background: #3d3214;
+  color: #f8e7b0;
+}
+
+.main {
+  padding: 1.5rem 0 4rem;
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
