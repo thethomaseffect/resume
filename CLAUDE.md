@@ -1,6 +1,6 @@
 # Personal resume of Thomas Geraghty
 
-React + Vite static site, deployed like `for-sale`: push to `main` builds with GitHub Actions and publishes to GitHub Pages at the site root (`/`).
+React + Vite static site, deployed like `for-sale`: push to `main` builds with GitHub Actions and publishes to GitHub Pages at `/resume/`. Vite `base` and the router basename must stay `/resume/` so assets resolve on the project site.
 
 ## Content rules
 

@@ -15,7 +15,7 @@ function githubPagesSpaFallback() {
 
 export default defineConfig({
   plugins: [react(), githubPagesSpaFallback()],
-  base: '/',
+  base: '/resume/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,

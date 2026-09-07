@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-The app is served at `http://127.0.0.1:5173/` (GitHub Pages is the site root, not `/resume/`).
+The app is served at `http://127.0.0.1:5173/resume/` (same path as GitHub Pages).
 
 ```bash
 npm run build      # compiles JSON and CV PDFs, then writes dist/ (and dist/404.html for SPA fallback)
