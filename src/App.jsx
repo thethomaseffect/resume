@@ -128,29 +128,6 @@ export default function App() {
                 />
                 {ui.includeExtras}
               </label>
-              <a
-                className="pdf-button"
-                href={`${import.meta.env.BASE_URL}${
-                  language === 'sv'
-                    ? includeExtras
-                      ? 'thomas-geraghty-sv-extras.pdf'
-                      : 'thomas-geraghty-sv.pdf'
-                    : includeExtras
-                      ? 'thomas-geraghty-extras.pdf'
-                      : 'thomas-geraghty.pdf'
-                }`}
-                download={
-                  language === 'sv'
-                    ? includeExtras
-                      ? 'Thomas-Geraghty-CV-sv-extras.pdf'
-                      : 'Thomas-Geraghty-CV-sv.pdf'
-                    : includeExtras
-                      ? 'Thomas-Geraghty-CV-extras.pdf'
-                      : 'Thomas-Geraghty-CV.pdf'
-                }
-              >
-                {ui.downloadPdf}
-              </a>
             </div>
           </div>
         </header>

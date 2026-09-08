@@ -13,11 +13,20 @@ function githubPagesSpaFallback() {
   };
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react(), githubPagesSpaFallback()],
-  base: '/resume/',
+  base: command === 'build' ? '/resume/' : '/',
+  server: {
+    host: '127.0.0.1',
+    port: 5173,
+    strictPort: true,
+  },
+  preview: {
+    host: '127.0.0.1',
+    port: 4173,
+  },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
   },
-});
+}));

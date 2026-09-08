@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { parseProse, applyProse } = require('./lib/prose');
+const { documentStamp } = require('./lib/documents');
 
 const ROOT = path.join(__dirname, '..');
 const SOURCE_STRUCT = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'source.json'), 'utf8'));
@@ -145,6 +146,8 @@ function compile(asOf) {
         label: meta.label,
         icon: meta.icon,
         category: meta.category || 'other',
+        tier: meta.tier === 'core' ? 'core' : 'also',
+        rank: Number.isFinite(meta.rank) ? meta.rank : 1000,
         months,
         years,
         ratio,
@@ -178,9 +181,16 @@ function compile(asOf) {
     skills: project.skills || [],
   }));
 
+  const documents = documentStamp(new Date(asOf));
+
   return {
     generatedAt: asOf,
     person: SOURCE.person,
+    coverLetter: {
+      ...SOURCE.coverLetter,
+      date: documents.date,
+    },
+    downloads: documents.files,
     workRights: SOURCE.workRights,
     languages: SOURCE.languages,
     locations,

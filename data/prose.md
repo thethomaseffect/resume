@@ -44,6 +44,24 @@ Available immediately in Stockholm for permanent roles and fixed-term contracts.
 
 Tillgänglig omgående i Stockholm för tillsvidareanställning och visstidsavtal. Öppen för kortare omlokalisering på uppdrag när resa och boende täcks.
 
+# coverLetter.body
+
+### en
+
+I have been living in Sweden for 4 years now, though I do not consider my Swedish to be at an acceptable level for working so I am only interested in roles where only English is sufficient. My work ethic is that I like to work fast and deliver solutions that are high quality without being over-designed in a team where everyone aspires to be the best they can. My ideal position is one where I can give my absolute all towards my craft while maintaining a healthy work/life balance. I have experience leading teams, so if there is a situation where the response is time sensitive and nobody else is stepping up I am willing to take charge. This should give a good idea of if I am a good cultural fit for your company.
+
+I'm interested in on-prem roles in Stockholm primarily, both fixed-term contracts and permanent positions. I am also willing to relocate temporarily for fixed-term contracts assuming the employer is willing to cover the necessary costs and arrangements involved.
+
+I am available ASAP. Outside of work I like to write fiction, attend various book clubs and play boardgames.
+
+### sv
+
+Jag har bott i Sverige i 4 år nu, men jag anser inte att min svenska är på en acceptabel nivå för att arbeta, så jag är bara intresserad av roller där enbart engelska räcker. Min arbetsetik är att jag gillar att arbeta snabbt och leverera lösningar som är högkvalitativa utan att vara överdesignade, i ett team där alla strävar efter att vara så bra de kan. Min ideala tjänst är en där jag kan ge allt till mitt hantverk och samtidigt behålla en hälsosam balans mellan arbete och fritid. Jag har erfarenhet av att leda team, så om det uppstår en tidskritisk situation och ingen annan tar täten är jag beredd att ta kommandot. Detta bör ge en god bild av om jag är en bra kulturell matchning för ert företag.
+
+Jag är främst intresserad av on-prem-roller i Stockholm, både visstidsavtal och tillsvidareanställningar. Jag är också villig att flytta tillfälligt för visstidsavtal, förutsatt att arbetsgivaren täcker de nödvändiga kostnaderna och arrangemangen.
+
+Jag är tillgänglig omgående. Utanför arbetet tycker jag om att skriva fiktion, gå på olika bokklubbar och spela brädspel.
+
 # workRights.citizenship
 
 ### en

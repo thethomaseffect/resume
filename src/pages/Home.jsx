@@ -14,6 +14,23 @@ function shortUrl(url) {
   return url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
 }
 
+function pdfLink(file) {
+  if (!file) return { href: '#', download: undefined };
+  return { href: asset(file), download: file };
+}
+
+function resumePdf(profile, language, includeExtras) {
+  const files = profile.downloads?.resume || {};
+  const file =
+    language === 'sv' ? (includeExtras ? files.svExtras : files.sv) : includeExtras ? files.enExtras : files.en;
+  return pdfLink(file);
+}
+
+function coverLetterPdf(profile, language) {
+  const files = profile.downloads?.coverLetter || {};
+  return pdfLink(language === 'sv' ? files.sv : files.en);
+}
+
 function EnvelopeIcon({ size = 16 }) {
   return (
     <svg className="contact-envelope" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
@@ -23,7 +40,7 @@ function EnvelopeIcon({ size = 16 }) {
   );
 }
 
-function ContactChip({ href, emoji, icon, value, copyValue }) {
+function ContactChip({ href, emoji, icon, label, value, copyValue, valueClassName }) {
   const [copied, setCopied] = useState(false);
   const copy = async (event) => {
     event.preventDefault();
@@ -38,7 +55,10 @@ function ContactChip({ href, emoji, icon, value, copyValue }) {
         <span className="contact-media" aria-hidden="true">
           {icon || emoji}
         </span>
-        <span className="contact-value">{value}</span>
+        <span className={`contact-value${valueClassName ? ` ${valueClassName}` : ''}`}>
+          <span className="contact-label">{label}: </span>
+          {value}
+        </span>
       </a>
       <button type="button" className="copy-btn" onClick={copy}>
         {copied ? 'Copied' : 'Copy'}
@@ -48,6 +68,28 @@ function ContactChip({ href, emoji, icon, value, copyValue }) {
 }
 
 const SKILL_PREVIEW = 10;
+
+function SkillTagGroup({ title, skills, language, skillFilter, setSkillFilter }) {
+  if (!skills.length) return null;
+  return (
+    <div className="tech-group">
+      <h3 className="subhead">{title}</h3>
+      <div className="tag-row">
+        {skills.map((skill) => (
+          <button
+            type="button"
+            className={`tag ${skillFilter === skill.id ? 'active' : ''}`}
+            key={skill.id}
+            onClick={() => setSkillFilter(skill.id)}
+          >
+            <SkillIcon slug={skill.icon} label={pick(skill.label, language)} size={14} />
+            {pick(skill.label, language)}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function PalmTreeMark() {
   return (
@@ -95,6 +137,11 @@ export default function Home() {
   const skillsForcedOpen = selectedSkillIndex >= SKILL_PREVIEW;
   const skillsExpanded = skillsOpen || skillsForcedOpen;
   const visibleSkills = skillsExpanded ? profile.skills : profile.skills.slice(0, SKILL_PREVIEW);
+  const featuredSkills = [...profile.skills].sort((a, b) => (a.rank ?? 1000) - (b.rank ?? 1000) || a.id.localeCompare(b.id));
+  const coreSkills = featuredSkills.filter((skill) => skill.tier === 'core');
+  const alsoSkills = featuredSkills.filter((skill) => skill.tier !== 'core');
+  const resume = resumePdf(profile, language, includeExtras);
+  const cover = coverLetterPdf(profile, language);
 
   const visibleExperience = profile.experience.filter((company) => {
     if (!skillFilter) return true;
@@ -112,41 +159,57 @@ export default function Home() {
           height="340"
         />
         <div className="hero-copy">
-          <p className="eyebrow">{pick(person.location, language)}</p>
-          <h1>{person.name}</h1>
-          <p className="headline">{pick(person.headline, language)}</p>
+          <div className="hero-heading">
+            <div className="hero-text">
+              <p className="eyebrow">{pick(person.location, language)}</p>
+              <h1>{person.name}</h1>
+              <p className="headline">{pick(person.headline, language)}</p>
+            </div>
+            <div className="hero-downloads">
+              <a className="pdf-button" href={resume.href} download={resume.download}>
+                {ui.downloadResumePdf}
+              </a>
+              <a className="pdf-button" href={cover.href} download={cover.download}>
+                {ui.downloadCoverLetterPdf}
+              </a>
+            </div>
+          </div>
           <p className="summary">{pick(person.summary, language)}</p>
           {person.ai ? <p className="summary">{pick(person.ai, language)}</p> : null}
           <p className="availability">{pick(person.availability, language)}</p>
-          <div className="contact-row">
-            <ContactChip
-              href={mailtoHref(person.email, person.emailSubject)}
-              icon={<EnvelopeIcon />}
-              value={person.email}
-            />
-            <ContactChip
-              href={telHref(person.phone)}
-              emoji="📞"
-              value={person.phoneDisplay}
-              copyValue={person.phone}
-            />
-            <ContactChip
-              href={person.github}
-              icon={
-                <span className="contact-github">
-                  <SkillIcon slug="github" label="GitHub" size={16} />
-                </span>
-              }
-              value={shortUrl(person.github)}
-              copyValue={person.github}
-            />
-            <ContactChip
-              href={person.linkedin}
-              icon={<SkillIcon slug="linkedin" label="LinkedIn" size={16} />}
-              value={shortUrl(person.linkedin)}
-              copyValue={person.linkedin}
-            />
-          </div>
+        </div>
+        <div className="contact-row">
+          <ContactChip
+            href={mailtoHref(person.email, person.emailSubject)}
+            icon={<EnvelopeIcon />}
+            label={ui.email}
+            value={person.email}
+          />
+          <ContactChip
+            href={telHref(person.phone)}
+            emoji="📞"
+            label={ui.phone || 'Phone'}
+            value={person.phone}
+            valueClassName="contact-phone"
+          />
+          <ContactChip
+            href={person.github}
+            icon={
+              <span className="contact-github">
+                <SkillIcon slug="github" label="GitHub" size={16} />
+              </span>
+            }
+            label={ui.github}
+            value={shortUrl(person.github)}
+            copyValue={person.github}
+          />
+          <ContactChip
+            href={person.linkedin}
+            icon={<SkillIcon slug="linkedin" label="LinkedIn" size={16} />}
+            label={ui.linkedin}
+            value={shortUrl(person.linkedin)}
+            copyValue={person.linkedin}
+          />
         </div>
       </section>
 
@@ -192,9 +255,9 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="card" id="skills">
-        <h2>{ui.skillsTitle}</h2>
-        <p className="section-intro">{ui.skillsIntro}</p>
+      <section className="card" id="technologies">
+        <h2>{ui.techTitle}</h2>
+        <p className="section-intro">{ui.techIntro}</p>
         {selectedSkill ? (
           <div className="filter-bar">
             <span>
@@ -205,42 +268,20 @@ export default function Home() {
             </button>
           </div>
         ) : null}
-        <div className={`skill-list-wrap ${skillsExpanded ? 'open' : ''}`}>
-          <ul className="skill-list">
-            {visibleSkills.map((skill) => (
-              <li key={skill.id}>
-                <button
-                  type="button"
-                  className={`skill-row ${skillFilter === skill.id ? 'active' : ''}`}
-                  onClick={() => setSkillFilter(skill.id)}
-                  aria-pressed={skillFilter === skill.id}
-                >
-                  <SkillIcon slug={skill.icon} label={pick(skill.label, language)} />
-                  <span className="skill-name">{pick(skill.label, language)}</span>
-                  <span className="skill-years">{pick(skill.duration, language)}</span>
-                  <span className="skill-bar" aria-hidden="true">
-                    <span
-                      className="skill-bar-fill"
-                      style={{
-                        width: `${Math.max(8, skill.ratio * 100)}%`,
-                        background: skillBarColor(skill.ratio),
-                      }}
-                    />
-                  </span>
-                </button>
-              </li>
-            ))}
-          </ul>
-          {profile.skills.length > SKILL_PREVIEW && (skillsOpen || !skillsForcedOpen) ? (
-            <button
-              type="button"
-              className="skill-more"
-              onClick={() => setSkillsOpen((value) => !value)}
-            >
-              {skillsExpanded ? ui.fewerSkills : ui.moreSkills}
-            </button>
-          ) : null}
-        </div>
+        <SkillTagGroup
+          title={ui.coreSkills}
+          skills={coreSkills}
+          language={language}
+          skillFilter={skillFilter}
+          setSkillFilter={setSkillFilter}
+        />
+        <SkillTagGroup
+          title={ui.alsoSkills}
+          skills={alsoSkills}
+          language={language}
+          skillFilter={skillFilter}
+          setSkillFilter={setSkillFilter}
+        />
       </section>
 
       <section className="card" id="experience">
@@ -420,6 +461,57 @@ export default function Home() {
           </section>
         </>
       ) : null}
+
+      <section className="card" id="skills">
+        <h2>{ui.skillsTitle}</h2>
+        <p className="section-intro">{ui.skillsIntro}</p>
+        {selectedSkill ? (
+          <div className="filter-bar">
+            <span>
+              {ui.filteredBy} <strong>{pick(selectedSkill.label, language)}</strong>
+            </span>
+            <button type="button" onClick={() => setSkillFilter('')}>
+              {ui.clearFilter}
+            </button>
+          </div>
+        ) : null}
+        <div className={`skill-list-wrap ${skillsExpanded ? 'open' : ''}`}>
+          <ul className="skill-list">
+            {visibleSkills.map((skill) => (
+              <li key={skill.id}>
+                <button
+                  type="button"
+                  className={`skill-row ${skillFilter === skill.id ? 'active' : ''}`}
+                  onClick={() => setSkillFilter(skill.id)}
+                  aria-pressed={skillFilter === skill.id}
+                >
+                  <SkillIcon slug={skill.icon} label={pick(skill.label, language)} />
+                  <span className="skill-name">{pick(skill.label, language)}</span>
+                  <span className="skill-years">{pick(skill.duration, language)}</span>
+                  <span className="skill-bar" aria-hidden="true">
+                    <span
+                      className="skill-bar-fill"
+                      style={{
+                        width: `${Math.max(8, skill.ratio * 100)}%`,
+                        background: skillBarColor(skill.ratio),
+                      }}
+                    />
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+          {profile.skills.length > SKILL_PREVIEW && (skillsOpen || !skillsForcedOpen) ? (
+            <button
+              type="button"
+              className="skill-more"
+              onClick={() => setSkillsOpen((value) => !value)}
+            >
+              {skillsExpanded ? ui.fewerSkills : ui.moreSkills}
+            </button>
+          ) : null}
+        </div>
+      </section>
     </div>
   );
 }

@@ -19,6 +19,9 @@ import {
   siAmazonwebservices,
   siAwslambda,
   siAmazoncloudwatch,
+  siAmazonecs,
+  siAmazoneks,
+  siAmazonsqs,
   siDocker,
   siKubernetes,
   siTerraform,
@@ -56,6 +59,7 @@ import {
   siLinkedin,
   siFigma,
   siBitbucket,
+  siTampermonkey,
 } from 'simple-icons';
 
 const ICONS = {
@@ -79,6 +83,9 @@ const ICONS = {
   amazonaws: siAmazonwebservices,
   awslambda: siAwslambda,
   amazoncloudwatch: siAmazoncloudwatch,
+  amazonecs: siAmazonecs,
+  amazoneks: siAmazoneks,
+  amazonsqs: siAmazonsqs,
   docker: siDocker,
   kubernetes: siKubernetes,
   terraform: siTerraform,
@@ -116,6 +123,7 @@ const ICONS = {
   linkedin: siLinkedin,
   figma: siFigma,
   bitbucket: siBitbucket,
+  tampermonkey: siTampermonkey,
 };
 
 const CURSOR_PATH =

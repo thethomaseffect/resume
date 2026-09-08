@@ -57,6 +57,7 @@ function serializeProse(source) {
   chunks.push(formatBlock('person.summary', person.summary.en, person.summary.sv));
   chunks.push(formatBlock('person.ai', person.ai.en, person.ai.sv));
   chunks.push(formatBlock('person.availability', person.availability.en, person.availability.sv));
+  chunks.push(formatBlock('coverLetter.body', source.coverLetter.body.en, source.coverLetter.body.sv));
   chunks.push(formatBlock('workRights.citizenship', source.workRights.citizenship.en, source.workRights.citizenship.sv));
   for (const right of source.workRights.rights) {
     chunks.push(formatBlock(`workRights.rights.${right.id}`, right.label.en, right.label.sv));
@@ -104,6 +105,10 @@ function applyProse(source, sections) {
   out.person.summary = requireSection(sections, 'person.summary');
   out.person.ai = requireSection(sections, 'person.ai');
   out.person.availability = requireSection(sections, 'person.availability');
+  out.coverLetter = {
+    ...out.coverLetter,
+    body: requireSection(sections, 'coverLetter.body'),
+  };
   out.workRights.citizenship = requireSection(sections, 'workRights.citizenship');
   out.workRights.rights = out.workRights.rights.map((right) => ({
     ...right,
@@ -155,6 +160,7 @@ function stripProse(source) {
   delete out.person.summary;
   delete out.person.ai;
   delete out.person.availability;
+  if (out.coverLetter) delete out.coverLetter.body;
   delete out.workRights.citizenship;
   out.workRights.rights = out.workRights.rights.map(({ label, ...right }) => right);
   out.languages = out.languages.map(({ level, ...language }) => language);

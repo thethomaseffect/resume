@@ -10,10 +10,10 @@
     "email": "thomas.james.geraghty@hotmail.com",
     "emailSubject": "Enquiry about potential future employment",
     "phone": "+46761054533",
-    "phoneDisplay": "+46 76 105 45 33",
     "github": "https://github.com/thethomaseffect",
     "linkedin": "https://www.linkedin.com/in/thomasjamesgeraghty/"
   },
+  "coverLetter": {},
   "workRights": {
     "rights": [
       {
@@ -127,7 +127,9 @@
         "sv": "TypeScript"
       },
       "icon": "typescript",
-      "category": "language"
+      "category": "language",
+      "tier": "core",
+      "rank": 0
     },
     "javascript": {
       "label": {
@@ -135,7 +137,9 @@
         "sv": "JavaScript"
       },
       "icon": "javascript",
-      "category": "language"
+      "category": "language",
+      "tier": "core",
+      "rank": 1
     },
     "nodejs": {
       "label": {
@@ -143,7 +147,9 @@
         "sv": "Node.js"
       },
       "icon": "nodedotjs",
-      "category": "runtime"
+      "category": "runtime",
+      "tier": "core",
+      "rank": 2
     },
     "react": {
       "label": {
@@ -151,7 +157,9 @@
         "sv": "React"
       },
       "icon": "react",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 3
     },
     "redux": {
       "label": {
@@ -159,7 +167,9 @@
         "sv": "Redux"
       },
       "icon": "redux",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 18
     },
     "svelte": {
       "label": {
@@ -167,7 +177,9 @@
         "sv": "Svelte"
       },
       "icon": "svelte",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "angularjs": {
       "label": {
@@ -175,7 +187,9 @@
         "sv": "AngularJS"
       },
       "icon": "angular",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "nextjs": {
       "label": {
@@ -183,7 +197,9 @@
         "sv": "Next.js"
       },
       "icon": "nextdotjs",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "vite": {
       "label": {
@@ -191,7 +207,9 @@
         "sv": "Vite"
       },
       "icon": "vite",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "playwright": {
       "label": {
@@ -199,7 +217,9 @@
         "sv": "Playwright"
       },
       "icon": null,
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "css": {
       "label": {
@@ -207,7 +227,9 @@
         "sv": "CSS"
       },
       "icon": "css3",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 4
     },
     "styled-components": {
       "label": {
@@ -215,7 +237,9 @@
         "sv": "styled-components"
       },
       "icon": "styledcomponents",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "storybook": {
       "label": {
@@ -223,7 +247,9 @@
         "sv": "Storybook"
       },
       "icon": "storybook",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "jest": {
       "label": {
@@ -231,7 +257,9 @@
         "sv": "Jest"
       },
       "icon": "jest",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "cypress": {
       "label": {
@@ -239,7 +267,9 @@
         "sv": "Cypress"
       },
       "icon": "cypress",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "tailwindcss": {
       "label": {
@@ -247,7 +277,9 @@
         "sv": "Tailwind CSS"
       },
       "icon": "tailwindcss",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "materialui": {
       "label": {
@@ -255,7 +287,9 @@
         "sv": "Material UI"
       },
       "icon": "mui",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "express": {
       "label": {
@@ -263,7 +297,9 @@
         "sv": "Express"
       },
       "icon": "express",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "aws": {
       "label": {
@@ -271,7 +307,9 @@
         "sv": "AWS"
       },
       "icon": "amazonaws",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 6
     },
     "lambda": {
       "label": {
@@ -279,7 +317,9 @@
         "sv": "AWS Lambda"
       },
       "icon": "awslambda",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 29
     },
     "aws-cdk": {
       "label": {
@@ -287,7 +327,9 @@
         "sv": "AWS CDK"
       },
       "icon": "amazonaws",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 30
     },
     "cloudformation": {
       "label": {
@@ -295,7 +337,9 @@
         "sv": "CloudFormation"
       },
       "icon": "amazonaws",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 31
     },
     "cicd": {
       "label": {
@@ -303,7 +347,9 @@
         "sv": "CI/CD"
       },
       "icon": null,
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 11
     },
     "feature-flags": {
       "label": {
@@ -311,7 +357,9 @@
         "sv": "Feature flags"
       },
       "icon": null,
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "analytics": {
       "label": {
@@ -319,7 +367,9 @@
         "sv": "Analytics"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "cloudwatch": {
       "label": {
@@ -327,7 +377,9 @@
         "sv": "CloudWatch"
       },
       "icon": "amazoncloudwatch",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 32
     },
     "docker": {
       "label": {
@@ -335,7 +387,9 @@
         "sv": "Docker"
       },
       "icon": "docker",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 7
     },
     "kubernetes": {
       "label": {
@@ -343,7 +397,9 @@
         "sv": "Kubernetes"
       },
       "icon": "kubernetes",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 12
     },
     "terraform": {
       "label": {
@@ -351,7 +407,9 @@
         "sv": "Terraform"
       },
       "icon": "terraform",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "grafana": {
       "label": {
@@ -359,7 +417,9 @@
         "sv": "Grafana"
       },
       "icon": "grafana",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 26
     },
     "github-actions": {
       "label": {
@@ -367,7 +427,9 @@
         "sv": "GitHub Actions"
       },
       "icon": "githubactions",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 13
     },
     "argo-cd": {
       "label": {
@@ -375,7 +437,9 @@
         "sv": "Argo CD"
       },
       "icon": "argo",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "git": {
       "label": {
@@ -383,7 +447,9 @@
         "sv": "Git"
       },
       "icon": "git",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 8
     },
     "sentry": {
       "label": {
@@ -391,7 +457,9 @@
         "sv": "Sentry"
       },
       "icon": "sentry",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "postgresql": {
       "label": {
@@ -399,7 +467,9 @@
         "sv": "PostgreSQL"
       },
       "icon": "postgresql",
-      "category": "data"
+      "category": "data",
+      "tier": "core",
+      "rank": 9
     },
     "mysql": {
       "label": {
@@ -407,7 +477,9 @@
         "sv": "MySQL"
       },
       "icon": "mysql",
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "xmpp": {
       "label": {
@@ -415,7 +487,9 @@
         "sv": "XMPP"
       },
       "icon": "xmpp",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "mongodb": {
       "label": {
@@ -423,7 +497,9 @@
         "sv": "MongoDB"
       },
       "icon": "mongodb",
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "elasticsearch": {
       "label": {
@@ -431,7 +507,9 @@
         "sv": "Elasticsearch"
       },
       "icon": "elasticsearch",
-      "category": "data"
+      "category": "data",
+      "tier": "core",
+      "rank": 27
     },
     "kafka": {
       "label": {
@@ -439,7 +517,9 @@
         "sv": "Apache Kafka"
       },
       "icon": "apachekafka",
-      "category": "data"
+      "category": "data",
+      "tier": "core",
+      "rank": 19
     },
     "python": {
       "label": {
@@ -447,7 +527,9 @@
         "sv": "Python"
       },
       "icon": "python",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "java": {
       "label": {
@@ -455,7 +537,9 @@
         "sv": "Java"
       },
       "icon": "openjdk",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "csharp": {
       "label": {
@@ -463,7 +547,9 @@
         "sv": "C#"
       },
       "icon": "dotnet",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "cpp": {
       "label": {
@@ -471,7 +557,9 @@
         "sv": "C++"
       },
       "icon": "cplusplus",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "rust": {
       "label": {
@@ -479,7 +567,9 @@
         "sv": "Rust"
       },
       "icon": "rust",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "php": {
       "label": {
@@ -487,7 +577,9 @@
         "sv": "PHP"
       },
       "icon": "php",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "babel": {
       "label": {
@@ -495,7 +587,9 @@
         "sv": "Babel"
       },
       "icon": "babel",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "jwt": {
       "label": {
@@ -503,7 +597,9 @@
         "sv": "JWT"
       },
       "icon": "jsonwebtokens",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "microservices": {
       "label": {
@@ -511,7 +607,9 @@
         "sv": "Mikrotjänster"
       },
       "icon": null,
-      "category": "architecture"
+      "category": "architecture",
+      "tier": "core",
+      "rank": 16
     },
     "github": {
       "label": {
@@ -519,7 +617,9 @@
         "sv": "GitHub"
       },
       "icon": "github",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "bitbucket": {
       "label": {
@@ -527,7 +627,9 @@
         "sv": "Bitbucket"
       },
       "icon": "bitbucket",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "figma": {
       "label": {
@@ -535,7 +637,9 @@
         "sv": "Figma"
       },
       "icon": "figma",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 28
     },
     "cursor": {
       "label": {
@@ -543,7 +647,9 @@
         "sv": "Cursor"
       },
       "icon": "cursor",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "core",
+      "rank": 14
     },
     "e2e": {
       "label": {
@@ -551,7 +657,9 @@
         "sv": "E2E-testning"
       },
       "icon": null,
-      "category": "quality"
+      "category": "quality",
+      "tier": "core",
+      "rank": 17
     },
     "protractor": {
       "label": {
@@ -559,7 +667,9 @@
         "sv": "Protractor"
       },
       "icon": "protractor",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "facebook-api": {
       "label": {
@@ -567,7 +677,9 @@
         "sv": "Facebook Graph API"
       },
       "icon": "facebook",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "html": {
       "label": {
@@ -575,7 +687,9 @@
         "sv": "HTML"
       },
       "icon": "html5",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 5
     },
     "jquery": {
       "label": {
@@ -583,7 +697,9 @@
         "sv": "jQuery"
       },
       "icon": "jquery",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "selenium": {
       "label": {
@@ -591,7 +707,9 @@
         "sv": "Selenium"
       },
       "icon": "selenium",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "jenkins": {
       "label": {
@@ -599,7 +717,9 @@
         "sv": "Jenkins"
       },
       "icon": "jenkins",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "gulp": {
       "label": {
@@ -607,7 +727,9 @@
         "sv": "gulp"
       },
       "icon": "gulp",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "virtuoso": {
       "label": {
@@ -615,7 +737,9 @@
         "sv": "Virtuoso"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "dbpedia-spotlight": {
       "label": {
@@ -623,7 +747,9 @@
         "sv": "DBpedia Spotlight"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "kaldi": {
       "label": {
@@ -631,7 +757,9 @@
         "sv": "Kaldi"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "linux": {
       "label": {
@@ -639,7 +767,9 @@
         "sv": "Linux"
       },
       "icon": "linux",
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "sparql": {
       "label": {
@@ -647,7 +777,9 @@
         "sv": "SPARQL"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "jsonld": {
       "label": {
@@ -655,7 +787,9 @@
         "sv": "JSON-LD"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "rdf": {
       "label": {
@@ -663,7 +797,9 @@
         "sv": "RDF"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "owl": {
       "label": {
@@ -671,7 +807,9 @@
         "sv": "OWL"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "aspnet": {
       "label": {
@@ -679,7 +817,9 @@
         "sv": "ASP.NET"
       },
       "icon": "dotnet",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "sqlserver": {
       "label": {
@@ -687,7 +827,9 @@
         "sv": "SQL Server"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "office": {
       "label": {
@@ -695,7 +837,9 @@
         "sv": "Microsoft Office"
       },
       "icon": null,
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "flow": {
       "label": {
@@ -703,7 +847,9 @@
         "sv": "Flow"
       },
       "icon": null,
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "planout": {
       "label": {
@@ -711,7 +857,9 @@
         "sv": "Planout"
       },
       "icon": null,
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "wordpress": {
       "label": {
@@ -719,7 +867,9 @@
         "sv": "WordPress"
       },
       "icon": "wordpress",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "sharepoint": {
       "label": {
@@ -727,7 +877,9 @@
         "sv": "SharePoint"
       },
       "icon": null,
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "vercel": {
       "label": {
@@ -735,7 +887,9 @@
         "sv": "Vercel"
       },
       "icon": "vercel",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "also",
+      "rank": 1000
     },
     "linked-data": {
       "label": {
@@ -743,7 +897,9 @@
         "sv": "Länkade data"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "rest": {
       "label": {
@@ -751,7 +907,9 @@
         "sv": "REST-API:er"
       },
       "icon": null,
-      "category": "backend"
+      "category": "backend",
+      "tier": "core",
+      "rank": 10
     },
     "iot": {
       "label": {
@@ -759,7 +917,9 @@
         "sv": "IoT"
       },
       "icon": null,
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "claude": {
       "label": {
@@ -767,7 +927,109 @@
         "sv": "Claude / LLM-verktyg"
       },
       "icon": "anthropic",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "core",
+      "rank": 15
+    },
+    "mcp": {
+      "label": {
+        "en": "MCP",
+        "sv": "MCP"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 20
+    },
+    "agents": {
+      "label": {
+        "en": "AI agents",
+        "sv": "AI-agenter"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 21
+    },
+    "llm-hooks": {
+      "label": {
+        "en": "Agent hooks / memory",
+        "sv": "Agent-hooks / minne"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 22
+    },
+    "sqs": {
+      "label": {
+        "en": "Amazon SQS",
+        "sv": "Amazon SQS"
+      },
+      "icon": "amazonsqs",
+      "category": "cloud",
+      "tier": "also",
+      "rank": 1000
+    },
+    "risingwave": {
+      "label": {
+        "en": "RisingWave",
+        "sv": "RisingWave"
+      },
+      "icon": null,
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
+    },
+    "tampermonkey": {
+      "label": {
+        "en": "Tampermonkey",
+        "sv": "Tampermonkey"
+      },
+      "icon": "tampermonkey",
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
+    },
+    "docker-compose": {
+      "label": {
+        "en": "Docker Compose",
+        "sv": "Docker Compose"
+      },
+      "icon": "docker",
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
+    },
+    "ecs": {
+      "label": {
+        "en": "Amazon ECS",
+        "sv": "Amazon ECS"
+      },
+      "icon": "amazonecs",
+      "category": "cloud",
+      "tier": "core",
+      "rank": 23
+    },
+    "eks": {
+      "label": {
+        "en": "Amazon EKS",
+        "sv": "Amazon EKS"
+      },
+      "icon": "amazoneks",
+      "category": "cloud",
+      "tier": "core",
+      "rank": 24
+    },
+    "continuous-deployment": {
+      "label": {
+        "en": "Continuous deployment",
+        "sv": "Kontinuerlig deployment"
+      },
+      "icon": null,
+      "category": "devops",
+      "tier": "core",
+      "rank": 25
     }
   },
   "experience": [
@@ -813,7 +1075,16 @@
             "figma",
             "css",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd",
+            "mcp",
+            "agents",
+            "llm-hooks",
+            "tampermonkey",
+            "docker-compose",
+            "ecs",
+            "continuous-deployment"
           ]
         }
       ]
@@ -855,7 +1126,14 @@
             "postgresql",
             "cursor",
             "git",
-            "github"
+            "github",
+            "cicd",
+            "sqs",
+            "risingwave",
+            "mongodb",
+            "docker-compose",
+            "eks",
+            "continuous-deployment"
           ]
         }
       ]
@@ -894,7 +1172,9 @@
             "nodejs",
             "figma",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd"
           ]
         }
       ]
@@ -963,7 +1243,9 @@
             "docker",
             "figma",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd"
           ]
         }
       ]
@@ -999,7 +1281,8 @@
             "nodejs",
             "vercel",
             "git",
-            "github"
+            "github",
+            "html"
           ]
         }
       ]
@@ -1044,7 +1327,10 @@
             "aws",
             "css",
             "git",
-            "github"
+            "github",
+            "cicd",
+            "docker-compose",
+            "ecs"
           ]
         },
         {
@@ -1073,7 +1359,10 @@
             "aws",
             "css",
             "git",
-            "github"
+            "github",
+            "cicd",
+            "docker-compose",
+            "ecs"
           ]
         }
       ]
@@ -1122,7 +1411,10 @@
             "aws",
             "planout",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd",
+            "docker-compose"
           ]
         }
       ]
@@ -1164,7 +1456,8 @@
             "protractor",
             "jest",
             "git",
-            "github"
+            "github",
+            "html"
           ]
         }
       ]
@@ -1204,7 +1497,8 @@
             "jenkins",
             "mysql",
             "git",
-            "bitbucket"
+            "bitbucket",
+            "cicd"
           ]
         }
       ]
@@ -1254,7 +1548,10 @@
             "aws",
             "jenkins",
             "git",
-            "bitbucket"
+            "bitbucket",
+            "cicd",
+            "continuous-deployment",
+            "docker-compose"
           ]
         }
       ]

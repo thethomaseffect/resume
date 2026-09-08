@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-The app is served at `http://127.0.0.1:5173/resume/` (same path as GitHub Pages).
+The app is served at `http://127.0.0.1:5173/`. GitHub Pages still lives at `/resume/`.
 
 ```bash
 npm run build      # compiles JSON and CV PDFs, then writes dist/ (and dist/404.html for SPA fallback)
@@ -51,7 +51,7 @@ Check current and historical job ads at that company for similar titles and ask 
 - `tel:` link on the phone number
 - Light/dark theme (blue)
 - Swedish via `?lang=sv`, with an auto-translation warning
-- Download PDF is a compiled CV file (`thomas-geraghty.pdf`), not the browser print dialog
+- Download resume PDF and download current cover letter PDF sit at the top right of the name section. Filenames include the compile month and year (`CV_Thomas_Geraghty_2026_September.pdf`). Extras still changes which CV is linked.
 
 ## License
 

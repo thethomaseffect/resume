@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T20:42:37.032Z",
+  "generatedAt": "2026-09-08T09:09:43.912Z",
   "person": {
     "name": "Thomas Geraghty",
     "location": {
@@ -11,7 +11,6 @@
     "email": "thomas.james.geraghty@hotmail.com",
     "emailSubject": "Enquiry about potential future employment",
     "phone": "+46761054533",
-    "phoneDisplay": "+46 76 105 45 33",
     "github": "https://github.com/thethomaseffect",
     "linkedin": "https://www.linkedin.com/in/thomasjamesgeraghty/",
     "headline": {
@@ -29,6 +28,28 @@
     "availability": {
       "en": "Available immediately in Stockholm for permanent roles and fixed-term contracts. Open to short relocations for contracts when travel and housing are covered.",
       "sv": "Tillgänglig omgående i Stockholm för tillsvidareanställning och visstidsavtal. Öppen för kortare omlokalisering på uppdrag när resa och boende täcks."
+    }
+  },
+  "coverLetter": {
+    "body": {
+      "en": "I have been living in Sweden for 4 years now, though I do not consider my Swedish to be at an acceptable level for working so I am only interested in roles where only English is sufficient. My work ethic is that I like to work fast and deliver solutions that are high quality without being over-designed in a team where everyone aspires to be the best they can. My ideal position is one where I can give my absolute all towards my craft while maintaining a healthy work/life balance. I have experience leading teams, so if there is a situation where the response is time sensitive and nobody else is stepping up I am willing to take charge. This should give a good idea of if I am a good cultural fit for your company.\n\nI'm interested in on-prem roles in Stockholm primarily, both fixed-term contracts and permanent positions. I am also willing to relocate temporarily for fixed-term contracts assuming the employer is willing to cover the necessary costs and arrangements involved.\n\nI am available ASAP. Outside of work I like to write fiction, attend various book clubs and play boardgames.",
+      "sv": "Jag har bott i Sverige i 4 år nu, men jag anser inte att min svenska är på en acceptabel nivå för att arbeta, så jag är bara intresserad av roller där enbart engelska räcker. Min arbetsetik är att jag gillar att arbeta snabbt och leverera lösningar som är högkvalitativa utan att vara överdesignade, i ett team där alla strävar efter att vara så bra de kan. Min ideala tjänst är en där jag kan ge allt till mitt hantverk och samtidigt behålla en hälsosam balans mellan arbete och fritid. Jag har erfarenhet av att leda team, så om det uppstår en tidskritisk situation och ingen annan tar täten är jag beredd att ta kommandot. Detta bör ge en god bild av om jag är en bra kulturell matchning för ert företag.\n\nJag är främst intresserad av on-prem-roller i Stockholm, både visstidsavtal och tillsvidareanställningar. Jag är också villig att flytta tillfälligt för visstidsavtal, förutsatt att arbetsgivaren täcker de nödvändiga kostnaderna och arrangemangen.\n\nJag är tillgänglig omgående. Utanför arbetet tycker jag om att skriva fiktion, gå på olika bokklubbar och spela brädspel."
+    },
+    "date": {
+      "en": "September 2026",
+      "sv": "september 2026"
+    }
+  },
+  "downloads": {
+    "resume": {
+      "en": "CV_Thomas_Geraghty_2026_September.pdf",
+      "sv": "CV_Thomas_Geraghty_2026_September_SV.pdf",
+      "enExtras": "CV_Thomas_Geraghty_2026_September_Extras.pdf",
+      "svExtras": "CV_Thomas_Geraghty_2026_September_SV_Extras.pdf"
+    },
+    "coverLetter": {
+      "en": "Cover_Letter_Thomas_Geraghty_2026_September.pdf",
+      "sv": "Cover_Letter_Thomas_Geraghty_2026_September_SV.pdf"
     }
   },
   "workRights": {
@@ -236,7 +257,16 @@
             "figma",
             "css",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd",
+            "mcp",
+            "agents",
+            "llm-hooks",
+            "tampermonkey",
+            "docker-compose",
+            "ecs",
+            "continuous-deployment"
           ],
           "summary": {
             "en": "Full-stack engineering with a focus on QA and UX. My proudest achievement was rewriting core asset rendering to reduce bundle size on page load by 97.8%. Other wins include:",
@@ -300,7 +330,16 @@
         "figma",
         "css",
         "git",
-        "github"
+        "github",
+        "html",
+        "cicd",
+        "mcp",
+        "agents",
+        "llm-hooks",
+        "tampermonkey",
+        "docker-compose",
+        "ecs",
+        "continuous-deployment"
       ]
     },
     {
@@ -340,7 +379,14 @@
             "postgresql",
             "cursor",
             "git",
-            "github"
+            "github",
+            "cicd",
+            "sqs",
+            "risingwave",
+            "mongodb",
+            "docker-compose",
+            "eks",
+            "continuous-deployment"
           ],
           "summary": {
             "en": "Worked on asynchronous data ingestion pipelines using streaming data stores assisted by microservices. This accomplished turning protocol specific telecommunications data from IoT technologies into more simple modern forms more suited to analytics platforms. Relevant industries include automotive and telecommunications.",
@@ -391,7 +437,14 @@
         "postgresql",
         "cursor",
         "git",
-        "github"
+        "github",
+        "cicd",
+        "sqs",
+        "risingwave",
+        "mongodb",
+        "docker-compose",
+        "eks",
+        "continuous-deployment"
       ]
     },
     {
@@ -428,7 +481,9 @@
             "nodejs",
             "figma",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd"
           ],
           "summary": {
             "en": "As an early hire this role involved quickly studying the existing architecture and gaining the ability to write and deploy new features with little mentoring due to the intensity of deliverables in a similar fashion to what might be expected of a consultant. This involved using Svelte with TypeScript and Tailwind CSS primarily, though I also added a Github action for validating frontend changes for pull-requests and fixed many errors caused by pull requests affecting files not directly changed by said pull-requests.",
@@ -463,7 +518,9 @@
         "nodejs",
         "figma",
         "git",
-        "github"
+        "github",
+        "html",
+        "cicd"
       ]
     },
     {
@@ -550,7 +607,9 @@
             "docker",
             "figma",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd"
           ],
           "summary": {
             "en": "Taking advantage of my wide range of skills and experiences I helped fill gaps that may exist in projects at client companies in order to help them achieve the greatest success possible and provide value difficult to find elsewhere in the industry.\n\nI worked as a consultant at Klarna and Tre during this time, one helping mentor more junior members of a team working on cutting-edge projects as well as providing assistance in making sure the direction of the team was focused and any incidents were handled effectively in the event of no management being available at the time. The second was much more standard, working on projects to the best of my abilities providing a level of quality experience that could not be satisfied with only the company's resources at the time. Both engagements were frontend-focused.",
@@ -588,7 +647,9 @@
         "docker",
         "figma",
         "git",
-        "github"
+        "github",
+        "html",
+        "cicd"
       ]
     },
     {
@@ -622,7 +683,8 @@
             "nodejs",
             "vercel",
             "git",
-            "github"
+            "github",
+            "html"
           ],
           "summary": {
             "en": "Built a proof-of-concept for a new platform in Next.js and React, deployed on Vercel.",
@@ -653,7 +715,8 @@
         "nodejs",
         "vercel",
         "git",
-        "github"
+        "github",
+        "html"
       ]
     },
     {
@@ -696,7 +759,10 @@
             "aws",
             "css",
             "git",
-            "github"
+            "github",
+            "cicd",
+            "docker-compose",
+            "ecs"
           ],
           "summary": {
             "en": "My responsibilities as a lead were largely the same as when I was a senior backend engineer, with an added focus on uptime, creating metrics based on percentage uptime, percentage of calls resulting in 5xx errors and amount of releases rolled back. I implemented a new release process working with the QA lead and wrote a suite of smoke tests for all releases that caught all but the most obscure new issues introduced.",
@@ -745,7 +811,10 @@
             "aws",
             "css",
             "git",
-            "github"
+            "github",
+            "cicd",
+            "docker-compose",
+            "ecs"
           ],
           "summary": {
             "en": "Main responsibilities involved taking ownership of a 2 year old node.js application from an external consulting company and then proceeding to optimise and increase robustness for scalability. While the position was backend focused, I did also maintain the internal dashboard application written using React and Redux, massively improving performance by implementing real pagination on backend API and replacing legacy hardcoded user roles with a DB-backed implementation.",
@@ -804,6 +873,9 @@
         "css",
         "git",
         "github",
+        "cicd",
+        "docker-compose",
+        "ecs",
         "babel"
       ]
     },
@@ -851,7 +923,10 @@
             "aws",
             "planout",
             "git",
-            "github"
+            "github",
+            "html",
+            "cicd",
+            "docker-compose"
           ],
           "summary": {
             "en": "A combination of developing totally new services and developing alternatives to existing wordpress solutions in node.js. Tech stack was primarily node.js REST APIs written with express and frontend applications written using ES6+ with React, Flow, Material UI and Redux, but there was also work involving Rust and PHP. Provided support for data science engineering in the form of code review, leveraging my past experience with Python. Aside from CRUD-type applications also developed an AB testing solution flexible across entire tech stack using Facebook's Planout libraries.",
@@ -896,7 +971,10 @@
         "aws",
         "planout",
         "git",
-        "github"
+        "github",
+        "html",
+        "cicd",
+        "docker-compose"
       ]
     },
     {
@@ -936,7 +1014,8 @@
             "protractor",
             "jest",
             "git",
-            "github"
+            "github",
+            "html"
           ],
           "summary": {
             "en": "Modernised a complex angular 1 front end and uplifted test coverage and coding standards to a much higher standard. Mostly involved maintaining an existing codebase but also developed a microservice for live sports betting in AWS lambda that interacted with Facebook's graph API. Active role in mentoring more junior members and participating in the hiring process.",
@@ -974,7 +1053,8 @@
         "protractor",
         "jest",
         "git",
-        "github"
+        "github",
+        "html"
       ]
     },
     {
@@ -1012,7 +1092,8 @@
             "jenkins",
             "mysql",
             "git",
-            "bitbucket"
+            "bitbucket",
+            "cicd"
           ],
           "summary": {
             "en": "Assisted in building state-of-the-art E2E testing framework with a small highly skilled team, enabling rapid engineering iteration. Other duties mostly consisted of working as a full-stack engineer on the site improvements team, developing various features for over 30 sites in multiple languages and cultures.",
@@ -1053,7 +1134,8 @@
         "jenkins",
         "mysql",
         "git",
-        "bitbucket"
+        "bitbucket",
+        "cicd"
       ]
     },
     {
@@ -1101,7 +1183,10 @@
             "aws",
             "jenkins",
             "git",
-            "bitbucket"
+            "bitbucket",
+            "cicd",
+            "continuous-deployment",
+            "docker-compose"
           ],
           "summary": {
             "en": "Worked as part of a highly skilled team building a revolutionary media discovery tool. Key technologies include Node.js, AngularJS, MongoDB and Elasticsearch. The project also utilizes key linked data technologies such as virtuoso and DBPedia Spotlight. Other interesting technology includes gulp, next-generation JavaScript using BabelJS, Kaldi speech-to-text and docker. The team also practices agile development methodologies such as continuous deployment, git flow and scrum.\n\nI was involved in the entire stack of the application with special focus in information security and semantic web technologies due to my expertise in those areas. During my time on the project I wrote the authentication and authorization system utilizing JWT best practices, integrated semantic concept extraction, improved large portions of the build infrastructure, modernized large portions of the codebase using ES6 as well as a host of other client and server features and bug fixes.",
@@ -1147,7 +1232,10 @@
         "aws",
         "jenkins",
         "git",
-        "bitbucket"
+        "bitbucket",
+        "cicd",
+        "continuous-deployment",
+        "docker-compose"
       ]
     },
     {
@@ -1444,6 +1532,8 @@
       },
       "icon": "git",
       "category": "devops",
+      "tier": "core",
+      "rank": 8,
       "months": 105,
       "years": 8.8,
       "ratio": 1,
@@ -1460,6 +1550,8 @@
       },
       "icon": "javascript",
       "category": "language",
+      "tier": "core",
+      "rank": 1,
       "months": 100,
       "years": 8.3,
       "ratio": 0.9523809523809523,
@@ -1476,6 +1568,8 @@
       },
       "icon": "nodedotjs",
       "category": "runtime",
+      "tier": "core",
+      "rank": 2,
       "months": 100,
       "years": 8.3,
       "ratio": 0.9523809523809523,
@@ -1492,12 +1586,50 @@
       },
       "icon": "css3",
       "category": "frontend",
+      "tier": "core",
+      "rank": 4,
       "months": 96,
       "years": 8,
       "ratio": 0.9142857142857143,
       "duration": {
         "en": "8 years",
         "sv": "8 år"
+      }
+    },
+    {
+      "id": "cicd",
+      "label": {
+        "en": "CI/CD",
+        "sv": "CI/CD"
+      },
+      "icon": null,
+      "category": "devops",
+      "tier": "core",
+      "rank": 11,
+      "months": 81,
+      "years": 6.8,
+      "ratio": 0.7714285714285715,
+      "duration": {
+        "en": "6 yr 9 mo",
+        "sv": "6 år 9 mån"
+      }
+    },
+    {
+      "id": "html",
+      "label": {
+        "en": "HTML",
+        "sv": "HTML"
+      },
+      "icon": "html5",
+      "category": "frontend",
+      "tier": "core",
+      "rank": 5,
+      "months": 77,
+      "years": 6.4,
+      "ratio": 0.7333333333333333,
+      "duration": {
+        "en": "6 yr 5 mo",
+        "sv": "6 år 5 mån"
       }
     },
     {
@@ -1508,6 +1640,8 @@
       },
       "icon": "jest",
       "category": "quality",
+      "tier": "also",
+      "rank": 1000,
       "months": 77,
       "years": 6.4,
       "ratio": 0.7333333333333333,
@@ -1524,6 +1658,8 @@
       },
       "icon": "amazonaws",
       "category": "cloud",
+      "tier": "core",
+      "rank": 6,
       "months": 61,
       "years": 5.1,
       "ratio": 0.580952380952381,
@@ -1540,6 +1676,8 @@
       },
       "icon": "docker",
       "category": "devops",
+      "tier": "core",
+      "rank": 7,
       "months": 61,
       "years": 5.1,
       "ratio": 0.580952380952381,
@@ -1556,22 +1694,8 @@
       },
       "icon": "github",
       "category": "devops",
-      "months": 50,
-      "years": 4.2,
-      "ratio": 0.47619047619047616,
-      "duration": {
-        "en": "4 yr 2 mo",
-        "sv": "4 år 2 mån"
-      }
-    },
-    {
-      "id": "html",
-      "label": {
-        "en": "HTML",
-        "sv": "HTML"
-      },
-      "icon": "html5",
-      "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 50,
       "years": 4.2,
       "ratio": 0.47619047619047616,
@@ -1588,6 +1712,8 @@
       },
       "icon": "typescript",
       "category": "language",
+      "tier": "core",
+      "rank": 0,
       "months": 50,
       "years": 4.2,
       "ratio": 0.47619047619047616,
@@ -1604,6 +1730,8 @@
       },
       "icon": null,
       "category": "quality",
+      "tier": "core",
+      "rank": 17,
       "months": 47,
       "years": 3.9,
       "ratio": 0.44761904761904764,
@@ -1620,12 +1748,32 @@
       },
       "icon": null,
       "category": "backend",
+      "tier": "core",
+      "rank": 10,
       "months": 47,
       "years": 3.9,
       "ratio": 0.44761904761904764,
       "duration": {
         "en": "3 yr 11 mo",
         "sv": "3 år 11 mån"
+      }
+    },
+    {
+      "id": "docker-compose",
+      "label": {
+        "en": "Docker Compose",
+        "sv": "Docker Compose"
+      },
+      "icon": "docker",
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000,
+      "months": 45,
+      "years": 3.8,
+      "ratio": 0.42857142857142855,
+      "duration": {
+        "en": "3 yr 9 mo",
+        "sv": "3 år 9 mån"
       }
     },
     {
@@ -1636,6 +1784,8 @@
       },
       "icon": "react",
       "category": "frontend",
+      "tier": "core",
+      "rank": 3,
       "months": 41,
       "years": 3.4,
       "ratio": 0.3904761904761905,
@@ -1652,6 +1802,8 @@
       },
       "icon": "bitbucket",
       "category": "devops",
+      "tier": "also",
+      "rank": 1000,
       "months": 38,
       "years": 3.2,
       "ratio": 0.3619047619047619,
@@ -1668,6 +1820,8 @@
       },
       "icon": "express",
       "category": "backend",
+      "tier": "also",
+      "rank": 1000,
       "months": 38,
       "years": 3.2,
       "ratio": 0.3619047619047619,
@@ -1684,6 +1838,8 @@
       },
       "icon": "mysql",
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 38,
       "years": 3.2,
       "ratio": 0.3619047619047619,
@@ -1700,6 +1856,8 @@
       },
       "icon": "redux",
       "category": "frontend",
+      "tier": "core",
+      "rank": 18,
       "months": 38,
       "years": 3.2,
       "ratio": 0.3619047619047619,
@@ -1716,6 +1874,8 @@
       },
       "icon": "jenkins",
       "category": "devops",
+      "tier": "also",
+      "rank": 1000,
       "months": 35,
       "years": 2.9,
       "ratio": 0.3333333333333333,
@@ -1732,6 +1892,8 @@
       },
       "icon": "jquery",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 34,
       "years": 2.8,
       "ratio": 0.3238095238095238,
@@ -1748,6 +1910,8 @@
       },
       "icon": "babel",
       "category": "tooling",
+      "tier": "also",
+      "rank": 1000,
       "months": 30,
       "years": 2.5,
       "ratio": 0.2857142857142857,
@@ -1764,12 +1928,50 @@
       },
       "icon": "openjdk",
       "category": "language",
+      "tier": "also",
+      "rank": 1000,
       "months": 24,
       "years": 2,
       "ratio": 0.22857142857142856,
       "duration": {
         "en": "2 years",
         "sv": "2 år"
+      }
+    },
+    {
+      "id": "continuous-deployment",
+      "label": {
+        "en": "Continuous deployment",
+        "sv": "Kontinuerlig deployment"
+      },
+      "icon": null,
+      "category": "devops",
+      "tier": "core",
+      "rank": 25,
+      "months": 23,
+      "years": 1.9,
+      "ratio": 0.21904761904761905,
+      "duration": {
+        "en": "1 yr 11 mo",
+        "sv": "1 år 11 mån"
+      }
+    },
+    {
+      "id": "mongodb",
+      "label": {
+        "en": "MongoDB",
+        "sv": "MongoDB"
+      },
+      "icon": "mongodb",
+      "category": "data",
+      "tier": "also",
+      "rank": 1000,
+      "months": 23,
+      "years": 1.9,
+      "ratio": 0.21904761904761905,
+      "duration": {
+        "en": "1 yr 11 mo",
+        "sv": "1 år 11 mån"
       }
     },
     {
@@ -1780,6 +1982,8 @@
       },
       "icon": "postgresql",
       "category": "data",
+      "tier": "core",
+      "rank": 9,
       "months": 23,
       "years": 1.9,
       "ratio": 0.21904761904761905,
@@ -1796,12 +2000,32 @@
       },
       "icon": "terraform",
       "category": "devops",
+      "tier": "also",
+      "rank": 1000,
       "months": 23,
       "years": 1.9,
       "ratio": 0.21904761904761905,
       "duration": {
         "en": "1 yr 11 mo",
         "sv": "1 år 11 mån"
+      }
+    },
+    {
+      "id": "ecs",
+      "label": {
+        "en": "Amazon ECS",
+        "sv": "Amazon ECS"
+      },
+      "icon": "amazonecs",
+      "category": "cloud",
+      "tier": "core",
+      "rank": 23,
+      "months": 22,
+      "years": 1.8,
+      "ratio": 0.20952380952380953,
+      "duration": {
+        "en": "1 yr 10 mo",
+        "sv": "1 år 10 mån"
       }
     },
     {
@@ -1812,6 +2036,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 21,
       "years": 1.8,
       "ratio": 0.2,
@@ -1828,6 +2054,8 @@
       },
       "icon": "angular",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 20,
       "years": 1.7,
       "ratio": 0.19047619047619047,
@@ -1844,28 +2072,14 @@
       },
       "icon": "figma",
       "category": "frontend",
+      "tier": "core",
+      "rank": 28,
       "months": 20,
       "years": 1.7,
       "ratio": 0.19047619047619047,
       "duration": {
         "en": "1 yr 8 mo",
         "sv": "1 år 8 mån"
-      }
-    },
-    {
-      "id": "mongodb",
-      "label": {
-        "en": "MongoDB",
-        "sv": "MongoDB"
-      },
-      "icon": "mongodb",
-      "category": "data",
-      "months": 19,
-      "years": 1.6,
-      "ratio": 0.18095238095238095,
-      "duration": {
-        "en": "1 yr 7 mo",
-        "sv": "1 år 7 mån"
       }
     },
     {
@@ -1876,6 +2090,8 @@
       },
       "icon": "selenium",
       "category": "quality",
+      "tier": "also",
+      "rank": 1000,
       "months": 19,
       "years": 1.6,
       "ratio": 0.18095238095238095,
@@ -1892,6 +2108,8 @@
       },
       "icon": "xmpp",
       "category": "backend",
+      "tier": "also",
+      "rank": 1000,
       "months": 19,
       "years": 1.6,
       "ratio": 0.18095238095238095,
@@ -1908,6 +2126,8 @@
       },
       "icon": "cypress",
       "category": "quality",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -1924,6 +2144,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -1940,6 +2162,8 @@
       },
       "icon": "elasticsearch",
       "category": "data",
+      "tier": "core",
+      "rank": 27,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -1956,6 +2180,8 @@
       },
       "icon": "gulp",
       "category": "tooling",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -1972,6 +2198,8 @@
       },
       "icon": "jsonwebtokens",
       "category": "backend",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -1988,6 +2216,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -2004,6 +2234,8 @@
       },
       "icon": null,
       "category": "architecture",
+      "tier": "core",
+      "rank": 16,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -2020,6 +2252,8 @@
       },
       "icon": "storybook",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -2036,6 +2270,8 @@
       },
       "icon": "styledcomponents",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -2052,6 +2288,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 16,
       "years": 1.3,
       "ratio": 0.1523809523809524,
@@ -2068,6 +2306,8 @@
       },
       "icon": "dotnet",
       "category": "backend",
+      "tier": "also",
+      "rank": 1000,
       "months": 12,
       "years": 1,
       "ratio": 0.11428571428571428,
@@ -2084,6 +2324,8 @@
       },
       "icon": "dotnet",
       "category": "language",
+      "tier": "also",
+      "rank": 1000,
       "months": 12,
       "years": 1,
       "ratio": 0.11428571428571428,
@@ -2100,6 +2342,8 @@
       },
       "icon": null,
       "category": "platform",
+      "tier": "also",
+      "rank": 1000,
       "months": 12,
       "years": 1,
       "ratio": 0.11428571428571428,
@@ -2116,6 +2360,8 @@
       },
       "icon": null,
       "category": "platform",
+      "tier": "also",
+      "rank": 1000,
       "months": 12,
       "years": 1,
       "ratio": 0.11428571428571428,
@@ -2132,6 +2378,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 12,
       "years": 1,
       "ratio": 0.11428571428571428,
@@ -2148,6 +2396,8 @@
       },
       "icon": null,
       "category": "platform",
+      "tier": "also",
+      "rank": 1000,
       "months": 9,
       "years": 0.8,
       "ratio": 0.08571428571428572,
@@ -2164,6 +2414,8 @@
       },
       "icon": "linux",
       "category": "platform",
+      "tier": "also",
+      "rank": 1000,
       "months": 8,
       "years": 0.7,
       "ratio": 0.0761904761904762,
@@ -2180,6 +2432,8 @@
       },
       "icon": "python",
       "category": "language",
+      "tier": "also",
+      "rank": 1000,
       "months": 8,
       "years": 0.7,
       "ratio": 0.0761904761904762,
@@ -2196,6 +2450,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 5,
       "years": 0.4,
       "ratio": 0.047619047619047616,
@@ -2212,6 +2468,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 5,
       "years": 0.4,
       "ratio": 0.047619047619047616,
@@ -2228,6 +2486,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 5,
       "years": 0.4,
       "ratio": 0.047619047619047616,
@@ -2244,6 +2504,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 5,
       "years": 0.4,
       "ratio": 0.047619047619047616,
@@ -2260,6 +2522,8 @@
       },
       "icon": "argo",
       "category": "devops",
+      "tier": "also",
+      "rank": 1000,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2276,6 +2540,26 @@
       },
       "icon": "cursor",
       "category": "tooling",
+      "tier": "core",
+      "rank": 14,
+      "months": 4,
+      "years": 0.3,
+      "ratio": 0.0380952380952381,
+      "duration": {
+        "en": "4 months",
+        "sv": "4 mån"
+      }
+    },
+    {
+      "id": "eks",
+      "label": {
+        "en": "Amazon EKS",
+        "sv": "Amazon EKS"
+      },
+      "icon": "amazoneks",
+      "category": "cloud",
+      "tier": "core",
+      "rank": 24,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2292,6 +2576,8 @@
       },
       "icon": "facebook",
       "category": "backend",
+      "tier": "also",
+      "rank": 1000,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2308,6 +2594,8 @@
       },
       "icon": "githubactions",
       "category": "devops",
+      "tier": "core",
+      "rank": 13,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2324,6 +2612,8 @@
       },
       "icon": "grafana",
       "category": "devops",
+      "tier": "core",
+      "rank": 26,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2340,6 +2630,8 @@
       },
       "icon": "apachekafka",
       "category": "data",
+      "tier": "core",
+      "rank": 19,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2356,6 +2648,8 @@
       },
       "icon": "kubernetes",
       "category": "devops",
+      "tier": "core",
+      "rank": 12,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2372,6 +2666,8 @@
       },
       "icon": "awslambda",
       "category": "cloud",
+      "tier": "core",
+      "rank": 29,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
@@ -2388,12 +2684,68 @@
       },
       "icon": "protractor",
       "category": "quality",
+      "tier": "also",
+      "rank": 1000,
       "months": 4,
       "years": 0.3,
       "ratio": 0.0380952380952381,
       "duration": {
         "en": "4 months",
         "sv": "4 mån"
+      }
+    },
+    {
+      "id": "risingwave",
+      "label": {
+        "en": "RisingWave",
+        "sv": "RisingWave"
+      },
+      "icon": null,
+      "category": "data",
+      "tier": "also",
+      "rank": 1000,
+      "months": 4,
+      "years": 0.3,
+      "ratio": 0.0380952380952381,
+      "duration": {
+        "en": "4 months",
+        "sv": "4 mån"
+      }
+    },
+    {
+      "id": "sqs",
+      "label": {
+        "en": "Amazon SQS",
+        "sv": "Amazon SQS"
+      },
+      "icon": "amazonsqs",
+      "category": "cloud",
+      "tier": "also",
+      "rank": 1000,
+      "months": 4,
+      "years": 0.3,
+      "ratio": 0.0380952380952381,
+      "duration": {
+        "en": "4 months",
+        "sv": "4 mån"
+      }
+    },
+    {
+      "id": "agents",
+      "label": {
+        "en": "AI agents",
+        "sv": "AI-agenter"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 21,
+      "months": 3,
+      "years": 0.3,
+      "ratio": 0.02857142857142857,
+      "duration": {
+        "en": "3 months",
+        "sv": "3 mån"
       }
     },
     {
@@ -2404,6 +2756,8 @@
       },
       "icon": null,
       "category": "data",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2420,6 +2774,8 @@
       },
       "icon": "amazonaws",
       "category": "cloud",
+      "tier": "core",
+      "rank": 30,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2436,6 +2792,8 @@
       },
       "icon": "anthropic",
       "category": "tooling",
+      "tier": "core",
+      "rank": 15,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2452,6 +2810,8 @@
       },
       "icon": "amazonaws",
       "category": "cloud",
+      "tier": "core",
+      "rank": 31,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2468,6 +2828,8 @@
       },
       "icon": "amazoncloudwatch",
       "category": "cloud",
+      "tier": "core",
+      "rank": 32,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2484,6 +2846,8 @@
       },
       "icon": "cplusplus",
       "category": "language",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2500,6 +2864,8 @@
       },
       "icon": null,
       "category": "tooling",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2516,6 +2882,26 @@
       },
       "icon": null,
       "category": "tooling",
+      "tier": "also",
+      "rank": 1000,
+      "months": 3,
+      "years": 0.3,
+      "ratio": 0.02857142857142857,
+      "duration": {
+        "en": "3 months",
+        "sv": "3 mån"
+      }
+    },
+    {
+      "id": "llm-hooks",
+      "label": {
+        "en": "Agent hooks / memory",
+        "sv": "Agent-hooks / minne"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 22,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2532,6 +2918,26 @@
       },
       "icon": "mui",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
+      "months": 3,
+      "years": 0.3,
+      "ratio": 0.02857142857142857,
+      "duration": {
+        "en": "3 months",
+        "sv": "3 mån"
+      }
+    },
+    {
+      "id": "mcp",
+      "label": {
+        "en": "MCP",
+        "sv": "MCP"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 20,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2548,6 +2954,8 @@
       },
       "icon": "nextdotjs",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2564,6 +2972,8 @@
       },
       "icon": "php",
       "category": "language",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2580,6 +2990,8 @@
       },
       "icon": null,
       "category": "quality",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2596,6 +3008,8 @@
       },
       "icon": "rust",
       "category": "language",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2612,6 +3026,26 @@
       },
       "icon": "sentry",
       "category": "devops",
+      "tier": "also",
+      "rank": 1000,
+      "months": 3,
+      "years": 0.3,
+      "ratio": 0.02857142857142857,
+      "duration": {
+        "en": "3 months",
+        "sv": "3 mån"
+      }
+    },
+    {
+      "id": "tampermonkey",
+      "label": {
+        "en": "Tampermonkey",
+        "sv": "Tampermonkey"
+      },
+      "icon": "tampermonkey",
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2628,6 +3062,8 @@
       },
       "icon": "wordpress",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 3,
       "years": 0.3,
       "ratio": 0.02857142857142857,
@@ -2644,6 +3080,8 @@
       },
       "icon": null,
       "category": "quality",
+      "tier": "also",
+      "rank": 1000,
       "months": 1,
       "years": 0.1,
       "ratio": 0.009523809523809525,
@@ -2660,6 +3098,8 @@
       },
       "icon": "svelte",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 1,
       "years": 0.1,
       "ratio": 0.009523809523809525,
@@ -2676,6 +3116,8 @@
       },
       "icon": "tailwindcss",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 1,
       "years": 0.1,
       "ratio": 0.009523809523809525,
@@ -2692,6 +3134,8 @@
       },
       "icon": "vite",
       "category": "frontend",
+      "tier": "also",
+      "rank": 1000,
       "months": 1,
       "years": 0.1,
       "ratio": 0.009523809523809525,
@@ -2708,7 +3152,9 @@
         "sv": "TypeScript"
       },
       "icon": "typescript",
-      "category": "language"
+      "category": "language",
+      "tier": "core",
+      "rank": 0
     },
     "javascript": {
       "label": {
@@ -2716,7 +3162,9 @@
         "sv": "JavaScript"
       },
       "icon": "javascript",
-      "category": "language"
+      "category": "language",
+      "tier": "core",
+      "rank": 1
     },
     "nodejs": {
       "label": {
@@ -2724,7 +3172,9 @@
         "sv": "Node.js"
       },
       "icon": "nodedotjs",
-      "category": "runtime"
+      "category": "runtime",
+      "tier": "core",
+      "rank": 2
     },
     "react": {
       "label": {
@@ -2732,7 +3182,9 @@
         "sv": "React"
       },
       "icon": "react",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 3
     },
     "redux": {
       "label": {
@@ -2740,7 +3192,9 @@
         "sv": "Redux"
       },
       "icon": "redux",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 18
     },
     "svelte": {
       "label": {
@@ -2748,7 +3202,9 @@
         "sv": "Svelte"
       },
       "icon": "svelte",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "angularjs": {
       "label": {
@@ -2756,7 +3212,9 @@
         "sv": "AngularJS"
       },
       "icon": "angular",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "nextjs": {
       "label": {
@@ -2764,7 +3222,9 @@
         "sv": "Next.js"
       },
       "icon": "nextdotjs",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "vite": {
       "label": {
@@ -2772,7 +3232,9 @@
         "sv": "Vite"
       },
       "icon": "vite",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "playwright": {
       "label": {
@@ -2780,7 +3242,9 @@
         "sv": "Playwright"
       },
       "icon": null,
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "css": {
       "label": {
@@ -2788,7 +3252,9 @@
         "sv": "CSS"
       },
       "icon": "css3",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 4
     },
     "styled-components": {
       "label": {
@@ -2796,7 +3262,9 @@
         "sv": "styled-components"
       },
       "icon": "styledcomponents",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "storybook": {
       "label": {
@@ -2804,7 +3272,9 @@
         "sv": "Storybook"
       },
       "icon": "storybook",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "jest": {
       "label": {
@@ -2812,7 +3282,9 @@
         "sv": "Jest"
       },
       "icon": "jest",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "cypress": {
       "label": {
@@ -2820,7 +3292,9 @@
         "sv": "Cypress"
       },
       "icon": "cypress",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "tailwindcss": {
       "label": {
@@ -2828,7 +3302,9 @@
         "sv": "Tailwind CSS"
       },
       "icon": "tailwindcss",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "materialui": {
       "label": {
@@ -2836,7 +3312,9 @@
         "sv": "Material UI"
       },
       "icon": "mui",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "express": {
       "label": {
@@ -2844,7 +3322,9 @@
         "sv": "Express"
       },
       "icon": "express",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "aws": {
       "label": {
@@ -2852,7 +3332,9 @@
         "sv": "AWS"
       },
       "icon": "amazonaws",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 6
     },
     "lambda": {
       "label": {
@@ -2860,7 +3342,9 @@
         "sv": "AWS Lambda"
       },
       "icon": "awslambda",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 29
     },
     "aws-cdk": {
       "label": {
@@ -2868,7 +3352,9 @@
         "sv": "AWS CDK"
       },
       "icon": "amazonaws",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 30
     },
     "cloudformation": {
       "label": {
@@ -2876,7 +3362,9 @@
         "sv": "CloudFormation"
       },
       "icon": "amazonaws",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 31
     },
     "cicd": {
       "label": {
@@ -2884,7 +3372,9 @@
         "sv": "CI/CD"
       },
       "icon": null,
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 11
     },
     "feature-flags": {
       "label": {
@@ -2892,7 +3382,9 @@
         "sv": "Feature flags"
       },
       "icon": null,
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "analytics": {
       "label": {
@@ -2900,7 +3392,9 @@
         "sv": "Analytics"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "cloudwatch": {
       "label": {
@@ -2908,7 +3402,9 @@
         "sv": "CloudWatch"
       },
       "icon": "amazoncloudwatch",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "core",
+      "rank": 32
     },
     "docker": {
       "label": {
@@ -2916,7 +3412,9 @@
         "sv": "Docker"
       },
       "icon": "docker",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 7
     },
     "kubernetes": {
       "label": {
@@ -2924,7 +3422,9 @@
         "sv": "Kubernetes"
       },
       "icon": "kubernetes",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 12
     },
     "terraform": {
       "label": {
@@ -2932,7 +3432,9 @@
         "sv": "Terraform"
       },
       "icon": "terraform",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "grafana": {
       "label": {
@@ -2940,7 +3442,9 @@
         "sv": "Grafana"
       },
       "icon": "grafana",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 26
     },
     "github-actions": {
       "label": {
@@ -2948,7 +3452,9 @@
         "sv": "GitHub Actions"
       },
       "icon": "githubactions",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 13
     },
     "argo-cd": {
       "label": {
@@ -2956,7 +3462,9 @@
         "sv": "Argo CD"
       },
       "icon": "argo",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "git": {
       "label": {
@@ -2964,7 +3472,9 @@
         "sv": "Git"
       },
       "icon": "git",
-      "category": "devops"
+      "category": "devops",
+      "tier": "core",
+      "rank": 8
     },
     "sentry": {
       "label": {
@@ -2972,7 +3482,9 @@
         "sv": "Sentry"
       },
       "icon": "sentry",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "postgresql": {
       "label": {
@@ -2980,7 +3492,9 @@
         "sv": "PostgreSQL"
       },
       "icon": "postgresql",
-      "category": "data"
+      "category": "data",
+      "tier": "core",
+      "rank": 9
     },
     "mysql": {
       "label": {
@@ -2988,7 +3502,9 @@
         "sv": "MySQL"
       },
       "icon": "mysql",
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "xmpp": {
       "label": {
@@ -2996,7 +3512,9 @@
         "sv": "XMPP"
       },
       "icon": "xmpp",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "mongodb": {
       "label": {
@@ -3004,7 +3522,9 @@
         "sv": "MongoDB"
       },
       "icon": "mongodb",
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "elasticsearch": {
       "label": {
@@ -3012,7 +3532,9 @@
         "sv": "Elasticsearch"
       },
       "icon": "elasticsearch",
-      "category": "data"
+      "category": "data",
+      "tier": "core",
+      "rank": 27
     },
     "kafka": {
       "label": {
@@ -3020,7 +3542,9 @@
         "sv": "Apache Kafka"
       },
       "icon": "apachekafka",
-      "category": "data"
+      "category": "data",
+      "tier": "core",
+      "rank": 19
     },
     "python": {
       "label": {
@@ -3028,7 +3552,9 @@
         "sv": "Python"
       },
       "icon": "python",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "java": {
       "label": {
@@ -3036,7 +3562,9 @@
         "sv": "Java"
       },
       "icon": "openjdk",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "csharp": {
       "label": {
@@ -3044,7 +3572,9 @@
         "sv": "C#"
       },
       "icon": "dotnet",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "cpp": {
       "label": {
@@ -3052,7 +3582,9 @@
         "sv": "C++"
       },
       "icon": "cplusplus",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "rust": {
       "label": {
@@ -3060,7 +3592,9 @@
         "sv": "Rust"
       },
       "icon": "rust",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "php": {
       "label": {
@@ -3068,7 +3602,9 @@
         "sv": "PHP"
       },
       "icon": "php",
-      "category": "language"
+      "category": "language",
+      "tier": "also",
+      "rank": 1000
     },
     "babel": {
       "label": {
@@ -3076,7 +3612,9 @@
         "sv": "Babel"
       },
       "icon": "babel",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "jwt": {
       "label": {
@@ -3084,7 +3622,9 @@
         "sv": "JWT"
       },
       "icon": "jsonwebtokens",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "microservices": {
       "label": {
@@ -3092,7 +3632,9 @@
         "sv": "Mikrotjänster"
       },
       "icon": null,
-      "category": "architecture"
+      "category": "architecture",
+      "tier": "core",
+      "rank": 16
     },
     "github": {
       "label": {
@@ -3100,7 +3642,9 @@
         "sv": "GitHub"
       },
       "icon": "github",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "bitbucket": {
       "label": {
@@ -3108,7 +3652,9 @@
         "sv": "Bitbucket"
       },
       "icon": "bitbucket",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "figma": {
       "label": {
@@ -3116,7 +3662,9 @@
         "sv": "Figma"
       },
       "icon": "figma",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 28
     },
     "cursor": {
       "label": {
@@ -3124,7 +3672,9 @@
         "sv": "Cursor"
       },
       "icon": "cursor",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "core",
+      "rank": 14
     },
     "e2e": {
       "label": {
@@ -3132,7 +3682,9 @@
         "sv": "E2E-testning"
       },
       "icon": null,
-      "category": "quality"
+      "category": "quality",
+      "tier": "core",
+      "rank": 17
     },
     "protractor": {
       "label": {
@@ -3140,7 +3692,9 @@
         "sv": "Protractor"
       },
       "icon": "protractor",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "facebook-api": {
       "label": {
@@ -3148,7 +3702,9 @@
         "sv": "Facebook Graph API"
       },
       "icon": "facebook",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "html": {
       "label": {
@@ -3156,7 +3712,9 @@
         "sv": "HTML"
       },
       "icon": "html5",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "core",
+      "rank": 5
     },
     "jquery": {
       "label": {
@@ -3164,7 +3722,9 @@
         "sv": "jQuery"
       },
       "icon": "jquery",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "selenium": {
       "label": {
@@ -3172,7 +3732,9 @@
         "sv": "Selenium"
       },
       "icon": "selenium",
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "jenkins": {
       "label": {
@@ -3180,7 +3742,9 @@
         "sv": "Jenkins"
       },
       "icon": "jenkins",
-      "category": "devops"
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
     },
     "gulp": {
       "label": {
@@ -3188,7 +3752,9 @@
         "sv": "gulp"
       },
       "icon": "gulp",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "virtuoso": {
       "label": {
@@ -3196,7 +3762,9 @@
         "sv": "Virtuoso"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "dbpedia-spotlight": {
       "label": {
@@ -3204,7 +3772,9 @@
         "sv": "DBpedia Spotlight"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "kaldi": {
       "label": {
@@ -3212,7 +3782,9 @@
         "sv": "Kaldi"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "linux": {
       "label": {
@@ -3220,7 +3792,9 @@
         "sv": "Linux"
       },
       "icon": "linux",
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "sparql": {
       "label": {
@@ -3228,7 +3802,9 @@
         "sv": "SPARQL"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "jsonld": {
       "label": {
@@ -3236,7 +3812,9 @@
         "sv": "JSON-LD"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "rdf": {
       "label": {
@@ -3244,7 +3822,9 @@
         "sv": "RDF"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "owl": {
       "label": {
@@ -3252,7 +3832,9 @@
         "sv": "OWL"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "aspnet": {
       "label": {
@@ -3260,7 +3842,9 @@
         "sv": "ASP.NET"
       },
       "icon": "dotnet",
-      "category": "backend"
+      "category": "backend",
+      "tier": "also",
+      "rank": 1000
     },
     "sqlserver": {
       "label": {
@@ -3268,7 +3852,9 @@
         "sv": "SQL Server"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "office": {
       "label": {
@@ -3276,7 +3862,9 @@
         "sv": "Microsoft Office"
       },
       "icon": null,
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "flow": {
       "label": {
@@ -3284,7 +3872,9 @@
         "sv": "Flow"
       },
       "icon": null,
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
     },
     "planout": {
       "label": {
@@ -3292,7 +3882,9 @@
         "sv": "Planout"
       },
       "icon": null,
-      "category": "quality"
+      "category": "quality",
+      "tier": "also",
+      "rank": 1000
     },
     "wordpress": {
       "label": {
@@ -3300,7 +3892,9 @@
         "sv": "WordPress"
       },
       "icon": "wordpress",
-      "category": "frontend"
+      "category": "frontend",
+      "tier": "also",
+      "rank": 1000
     },
     "sharepoint": {
       "label": {
@@ -3308,7 +3902,9 @@
         "sv": "SharePoint"
       },
       "icon": null,
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "vercel": {
       "label": {
@@ -3316,7 +3912,9 @@
         "sv": "Vercel"
       },
       "icon": "vercel",
-      "category": "cloud"
+      "category": "cloud",
+      "tier": "also",
+      "rank": 1000
     },
     "linked-data": {
       "label": {
@@ -3324,7 +3922,9 @@
         "sv": "Länkade data"
       },
       "icon": null,
-      "category": "data"
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
     },
     "rest": {
       "label": {
@@ -3332,7 +3932,9 @@
         "sv": "REST-API:er"
       },
       "icon": null,
-      "category": "backend"
+      "category": "backend",
+      "tier": "core",
+      "rank": 10
     },
     "iot": {
       "label": {
@@ -3340,7 +3942,9 @@
         "sv": "IoT"
       },
       "icon": null,
-      "category": "platform"
+      "category": "platform",
+      "tier": "also",
+      "rank": 1000
     },
     "claude": {
       "label": {
@@ -3348,7 +3952,109 @@
         "sv": "Claude / LLM-verktyg"
       },
       "icon": "anthropic",
-      "category": "tooling"
+      "category": "tooling",
+      "tier": "core",
+      "rank": 15
+    },
+    "mcp": {
+      "label": {
+        "en": "MCP",
+        "sv": "MCP"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 20
+    },
+    "agents": {
+      "label": {
+        "en": "AI agents",
+        "sv": "AI-agenter"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 21
+    },
+    "llm-hooks": {
+      "label": {
+        "en": "Agent hooks / memory",
+        "sv": "Agent-hooks / minne"
+      },
+      "icon": null,
+      "category": "tooling",
+      "tier": "core",
+      "rank": 22
+    },
+    "sqs": {
+      "label": {
+        "en": "Amazon SQS",
+        "sv": "Amazon SQS"
+      },
+      "icon": "amazonsqs",
+      "category": "cloud",
+      "tier": "also",
+      "rank": 1000
+    },
+    "risingwave": {
+      "label": {
+        "en": "RisingWave",
+        "sv": "RisingWave"
+      },
+      "icon": null,
+      "category": "data",
+      "tier": "also",
+      "rank": 1000
+    },
+    "tampermonkey": {
+      "label": {
+        "en": "Tampermonkey",
+        "sv": "Tampermonkey"
+      },
+      "icon": "tampermonkey",
+      "category": "tooling",
+      "tier": "also",
+      "rank": 1000
+    },
+    "docker-compose": {
+      "label": {
+        "en": "Docker Compose",
+        "sv": "Docker Compose"
+      },
+      "icon": "docker",
+      "category": "devops",
+      "tier": "also",
+      "rank": 1000
+    },
+    "ecs": {
+      "label": {
+        "en": "Amazon ECS",
+        "sv": "Amazon ECS"
+      },
+      "icon": "amazonecs",
+      "category": "cloud",
+      "tier": "core",
+      "rank": 23
+    },
+    "eks": {
+      "label": {
+        "en": "Amazon EKS",
+        "sv": "Amazon EKS"
+      },
+      "icon": "amazoneks",
+      "category": "cloud",
+      "tier": "core",
+      "rank": 24
+    },
+    "continuous-deployment": {
+      "label": {
+        "en": "Continuous deployment",
+        "sv": "Kontinuerlig deployment"
+      },
+      "icon": null,
+      "category": "devops",
+      "tier": "core",
+      "rank": 25
     }
   },
   "projects": [
@@ -3563,8 +4269,12 @@
       "themeLight": "Light",
       "themeDark": "Dark",
       "downloadPdf": "Download PDF",
+      "downloadResumePdf": "Download resume PDF",
+      "downloadCoverLetterPdf": "Download current cover letter PDF",
+      "coverLetterTitle": "Cover letter",
       "includeExtras": "Include side projects & showcase",
       "email": "Email",
+      "phone": "Phone",
       "call": "Call",
       "github": "GitHub",
       "linkedin": "LinkedIn",
@@ -3576,6 +4286,10 @@
       "until": "until",
       "skillsTitle": "Skills",
       "skillsIntro": "Professional years, counted from overlapping roles. Click a skill to show only jobs that used it. Bar colour runs from green (most used) through orange to pale yellow (least).",
+      "techTitle": "Technologies",
+      "techIntro": "Core tools first, then others I have used. Click a tag to show only jobs that used it.",
+      "coreSkills": "Core",
+      "alsoSkills": "Also used",
       "moreSkills": "more…",
       "fewerSkills": "Show fewer",
       "clearFilter": "Show all roles",
@@ -3603,8 +4317,12 @@
       "themeLight": "Ljust",
       "themeDark": "Mörkt",
       "downloadPdf": "Ladda ner PDF",
+      "downloadResumePdf": "Ladda ner CV-PDF",
+      "downloadCoverLetterPdf": "Ladda ner aktuellt personligt brev",
+      "coverLetterTitle": "Personligt brev",
       "includeExtras": "Inkludera sidoprojekt och demonstrationer",
       "email": "E-post",
+      "phone": "Telefon",
       "call": "Ring",
       "github": "GitHub",
       "linkedin": "LinkedIn",
@@ -3616,6 +4334,10 @@
       "until": "till",
       "skillsTitle": "Kompetenser",
       "skillsIntro": "Yrkesår, räknade från överlappande roller. Klicka på en kompetens för att visa bara jobb där den användes. Färgen går från grönt (mest använt) via orange till ljusgult (minst).",
+      "techTitle": "Tekniker",
+      "techIntro": "Kärnverktyg först, sedan annat jag har använt. Klicka på en tagg för att visa bara jobb där den användes.",
+      "coreSkills": "Kärna",
+      "alsoSkills": "Även använt",
       "moreSkills": "fler…",
       "fewerSkills": "Visa färre",
       "clearFilter": "Visa alla roller",

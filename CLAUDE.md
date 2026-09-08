@@ -1,6 +1,6 @@
 # Personal resume of Thomas Geraghty
 
-React + Vite static site, deployed like `for-sale`: push to `main` builds with GitHub Actions and publishes to GitHub Pages at `/resume/`. Vite `base` and the router basename must stay `/resume/` so assets resolve on the project site.
+React + Vite static site, deployed like `for-sale`: push to `main` builds with GitHub Actions and publishes to GitHub Pages at `/resume/`. Production Vite `base` and the router basename are `/resume/`; local `npm run dev` uses `/` on `http://127.0.0.1:5173/`.
 
 ## Content rules
 
@@ -8,7 +8,7 @@ Human-written document copy lives in `data/prose.md`. Structural data (ids, date
 
 - role and company durations
 - professional skill-years (union of overlapping role date ranges, not double-counted)
-- skill order: most years first
+- featured technologies: core first, then also-used; the years list at the bottom stays most-years-first
 
 Do not invent technologies. When adding a role, check current and historical job ads at that company for similar titles, then ask which of those tools were actually used. Cloud, CI/CD, and containerisation go on the role as skill tags, not as a separate line.
 
@@ -29,7 +29,7 @@ Never rewrite job descriptions. Copy English verbatim from Obsidian `Digital Bra
 - Swedish via `?lang=sv` with an auto-translation warning
 - Side projects pull their own tech lists from JSON (GitHub URLs on each project)
 - Showcase section is for small demo apps; keep planned placeholders until they exist
-- A CV PDF is generated on every compile and linked from Download PDF
+- A CV PDF and the current cover letter PDF are generated on every compile, named with that month and year (`CV_Thomas_Geraghty_2026_September.pdf`), and linked from the name section
 
 ## Assets
 

@@ -14,17 +14,48 @@
 .hero {
   display: grid;
   grid-template-columns: 220px 1fr;
-  gap: 1.5rem;
+  grid-template-areas:
+    'photo copy'
+    'contact contact';
+  gap: 1.5rem 1.5rem;
   align-items: start;
 }
 
 .portrait {
+  grid-area: photo;
   width: 220px;
   height: 268px;
   object-fit: cover;
   object-position: center 12%;
   border-radius: 22px;
   border: 4px solid var(--blue-soft);
+}
+
+.hero-copy {
+  grid-area: copy;
+}
+
+.hero-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem 1.25rem;
+  align-items: start;
+}
+
+.hero-downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
+  min-width: 11.5rem;
+}
+
+.hero-downloads .pdf-button {
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  padding: 0.45rem 0.75rem;
+  white-space: normal;
 }
 
 .eyebrow,
@@ -59,11 +90,16 @@
 }
 
 .contact-row {
+  grid-area: contact;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   column-gap: 0.75rem;
   row-gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0;
+}
+
+.contact-label {
+  font-weight: 600;
 }
 
 .tag-row,
@@ -80,6 +116,12 @@
   align-items: center;
   gap: 0.35rem;
   min-width: 0;
+}
+
+.contact-value.contact-phone {
+  overflow: visible;
+  text-overflow: clip;
+  font-variant-numeric: tabular-nums;
 }
 
 .contact-chip,
@@ -259,6 +301,14 @@
   font-size: 0.9rem;
 }
 
+.tech-group {
+  margin-top: 0.85rem;
+}
+
+.tech-group .subhead {
+  margin-bottom: 0.45rem;
+}
+
 .skill-bar {
   display: block;
   height: 10px;
@@ -431,6 +481,21 @@
   .skill-row,
   .contact-row {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    grid-template-areas:
+      'photo'
+      'copy'
+      'contact';
+  }
+
+  .hero-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-downloads {
+    min-width: 0;
   }
 
   .portrait {

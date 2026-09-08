@@ -14,6 +14,7 @@ const HEADER_H = 36;
 const PAGE_TOP = 54;
 const BLUE = '#4a7391';
 const BLUE_DEEP = '#355a73';
+const PATH = '#c4894a';
 const INK = '#243039';
 const MUTED = '#5d6b76';
 
@@ -91,37 +92,83 @@ function shortUrl(url) {
   return url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
 }
 
-function skillGroups(profile, language) {
-  const labels = {
-    language: language === 'sv' ? 'Språk' : 'Languages',
-    frontend: 'Frontend',
-    backend: 'Backend',
-    cloud: language === 'sv' ? 'Moln & DevOps' : 'Cloud & DevOps',
-    data: 'Data',
-    tooling: language === 'sv' ? 'Verktyg' : 'Tooling',
-    quality: language === 'sv' ? 'Kvalitet' : 'Quality',
-    architecture: language === 'sv' ? 'Arkitektur' : 'Architecture',
-    platform: language === 'sv' ? 'Plattform' : 'Platform',
+function registerBodyFonts(doc) {
+  const regular = resolveFont(FONTS.regular);
+  const bold = resolveFont(FONTS.bold);
+  const italic = resolveFont(FONTS.italic);
+  if (regular) doc.registerFont('Body', regular);
+  if (bold) doc.registerFont('Body-Bold', bold);
+  if (italic) doc.registerFont('Body-Italic', italic);
+  return {
+    BODY: regular ? 'Body' : 'Helvetica',
+    BOLD: bold ? 'Body-Bold' : 'Helvetica-Bold',
+    ITALIC: italic ? 'Body-Italic' : 'Helvetica-Oblique',
   };
-  const merge = { runtime: 'backend', devops: 'cloud' };
-  const grouped = {};
-  for (const skill of profile.skills) {
-    const key = merge[skill.category] || skill.category || 'other';
-    if (!grouped[key]) grouped[key] = { label: labels[key] || key, names: [] };
-    grouped[key].names.push(pick(skill.label, language));
+}
+
+function drawHeroHeader(doc, { person, ui, t, BODY, BOLD }) {
+  const heroH = 170;
+  doc.rect(0, 0, PAGE_W, heroH).fill(BLUE);
+
+  const photoPath = path.join(ROOT, 'public', person.photoSquare || person.photo);
+  const photoR = 38;
+  const photoCx = PAGE_W - MX - photoR;
+  const photoCy = 56;
+  const textW = CONTENT_W - photoR * 2 - 16;
+  const contactCol = CONTENT_W * 0.5;
+
+  doc.font(BOLD).fontSize(SIZE.name).fillColor('#ffffff');
+  doc.text(person.name, MX, 18, { width: textW });
+  doc.font(BODY).fontSize(SIZE.headline).fillColor('#d7e4ee');
+  doc.text(t(person.headline), MX, 48, { width: textW });
+  doc.fontSize(SIZE.contact).fillColor('#e8f0f5');
+  doc.text(t(person.location), MX, 68, { width: textW });
+  doc.fontSize(SIZE.contact).fillColor('#f7fafc');
+  doc.text(`${ui.email}: ${person.email}`, MX, 108, { width: contactCol, lineBreak: false });
+  doc.text(`${ui.phone}: ${person.phone}`, MX + contactCol, 108, {
+    width: contactCol,
+    lineBreak: false,
+  });
+  doc.text(`${ui.github}: ${shortUrl(person.github)}`, MX, 124, {
+    width: contactCol,
+    lineBreak: false,
+  });
+  doc.text(`${ui.linkedin}: ${shortUrl(person.linkedin)}`, MX + contactCol, 124, {
+    width: contactCol,
+    lineBreak: false,
+  });
+
+  if (fs.existsSync(photoPath)) {
+    doc.save();
+    doc.circle(photoCx, photoCy, photoR + 2).fill('#ffffff');
+    doc.circle(photoCx, photoCy, photoR).clip();
+    doc.image(photoPath, photoCx - photoR, photoCy - photoR, {
+      width: photoR * 2,
+      height: photoR * 2,
+      cover: [photoR * 2, photoR * 2],
+    });
+    doc.restore();
   }
-  return ['language', 'frontend', 'backend', 'cloud', 'data', 'tooling', 'quality', 'architecture', 'platform']
-    .map((key) => grouped[key])
-    .filter(Boolean);
+
+  return heroH;
+}
+
+function skillGroups(profile, language) {
+  const buckets = { core: [], also: [] };
+  const sorted = [...profile.skills].sort((a, b) => (a.rank ?? 1000) - (b.rank ?? 1000) || a.id.localeCompare(b.id));
+  for (const skill of sorted) {
+    buckets[skill.tier === 'core' ? 'core' : 'also'].push(pick(skill.label, language));
+  }
+  return [
+    { label: language === 'sv' ? 'Kärna' : 'Core', names: buckets.core },
+    { label: language === 'sv' ? 'Även använt' : 'Also used', names: buckets.also },
+  ].filter((group) => group.names.length);
 }
 
 function writePdf(language, outPath, { includeExtras = false } = {}) {
   const ui = PROFILE.ui[language] || PROFILE.ui.en;
   const person = PROFILE.person;
   const t = (value) => pick(value, language);
-  const regular = resolveFont(FONTS.regular);
-  const bold = resolveFont(FONTS.bold);
-  const italic = resolveFont(FONTS.italic);
 
   return new Promise((resolve, reject) => {
     const doc = new PDFDocument({
@@ -139,12 +186,7 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
     stream.on('finish', resolve);
     stream.on('error', reject);
 
-    if (regular) doc.registerFont('Body', regular);
-    if (bold) doc.registerFont('Body-Bold', bold);
-    if (italic) doc.registerFont('Body-Italic', italic);
-    const BODY = regular ? 'Body' : 'Helvetica';
-    const BOLD = bold ? 'Body-Bold' : 'Helvetica-Bold';
-    const ITALIC = italic ? 'Body-Italic' : 'Helvetica-Oblique';
+    const { BODY, BOLD, ITALIC } = registerBodyFonts(doc);
 
     let y = 0;
 
@@ -267,40 +309,7 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
     }
 
     paintPageBackground();
-    const heroH = 138;
-    doc.rect(0, 0, PAGE_W, heroH).fill(BLUE);
-
-    const photoPath = path.join(ROOT, 'public', person.photoSquare || person.photo);
-    const photoR = 38;
-    const photoCx = PAGE_W - MX - photoR;
-    const photoCy = heroH / 2 + 2;
-    const textW = CONTENT_W - photoR * 2 - 16;
-
-    doc.font(BOLD).fontSize(SIZE.name).fillColor('#ffffff');
-    doc.text(person.name, MX, 26, { width: textW });
-    doc.font(BODY).fontSize(SIZE.headline).fillColor('#d7e4ee');
-    doc.text(t(person.headline), MX, 60, { width: textW });
-    doc.fontSize(SIZE.contact).fillColor('#e8f0f5');
-    doc.text(t(person.location), MX, 80, { width: textW });
-    doc.fontSize(SIZE.contact).fillColor('#f7fafc');
-    doc.text(
-      [person.email, person.phoneDisplay, shortUrl(person.github), shortUrl(person.linkedin)].join('   ·   '),
-      MX,
-      100,
-      { width: textW, lineGap: 1.4 }
-    );
-
-    if (fs.existsSync(photoPath)) {
-      doc.save();
-      doc.circle(photoCx, photoCy, photoR + 2).fill('#ffffff');
-      doc.circle(photoCx, photoCy, photoR).clip();
-      doc.image(photoPath, photoCx - photoR, photoCy - photoR, {
-        width: photoR * 2,
-        height: photoR * 2,
-        cover: [photoR * 2, photoR * 2],
-      });
-      doc.restore();
-    }
+    const heroH = drawHeroHeader(doc, { person, ui, t, BODY, BOLD });
 
     y = heroH + 18;
     paragraph(t(person.summary), { size: SIZE.body, gap: 9 });
@@ -346,10 +355,10 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
 
       const centers = columns.map((_, index) => MX + colW * index + colW / 2);
       doc.save();
-      doc.strokeColor(BLUE).lineWidth(1.2);
+      doc.strokeColor(PATH).lineWidth(1.2);
       doc.moveTo(centers[0], y + 4).lineTo(centers[centers.length - 1], y + 4).stroke();
       for (const cx of centers) {
-        doc.circle(cx, y + 4, 2.6).fillAndStroke(BLUE, BLUE);
+        doc.circle(cx, y + 4, 2.6).fillAndStroke(PATH, PATH);
       }
       doc.restore();
       y += 14;
@@ -457,15 +466,103 @@ function writePdf(language, outPath, { includeExtras = false } = {}) {
   });
 }
 
+function writeCoverLetter(language, outPath) {
+  const ui = PROFILE.ui[language] || PROFILE.ui.en;
+  const person = PROFILE.person;
+  const letter = PROFILE.coverLetter || {};
+  const t = (value) => pick(value, language);
+  const paragraphs = String(t(letter.body) || '')
+    .split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  return new Promise((resolve, reject) => {
+    const doc = new PDFDocument({
+      size: 'A4',
+      bufferPages: true,
+      margins: { top: 0, left: 0, right: 0, bottom: 0 },
+      info: {
+        Title: `${person.name} — ${ui.coverLetterTitle}`,
+        Author: person.name,
+        Subject: ui.coverLetterTitle,
+      },
+    });
+    const stream = fs.createWriteStream(outPath);
+    doc.pipe(stream);
+    stream.on('finish', resolve);
+    stream.on('error', reject);
+
+    const { BODY, BOLD } = registerBodyFonts(doc);
+
+    function heightOf(text, size, width = CONTENT_W, font = BODY) {
+      if (!text) return 0;
+      doc.font(font).fontSize(size);
+      return doc.heightOfString(text, { width, lineGap: 2 });
+    }
+
+    doc.rect(0, 0, PAGE_W, PAGE_H).fill('#ffffff');
+    const heroH = drawHeroHeader(doc, { person, ui, t, BODY, BOLD });
+    let y = heroH + 18;
+
+    doc.font(BOLD).fontSize(SIZE.section).fillColor(BLUE_DEEP);
+    doc.text(ui.coverLetterTitle, MX, y, { width: CONTENT_W });
+    y += 18;
+    doc.save();
+    doc.rect(MX, y, 40, 2.5).fill(BLUE);
+    doc.restore();
+    y += 12;
+
+    if (letter.date) {
+      doc.font(BODY).fontSize(SIZE.meta).fillColor(MUTED);
+      doc.text(t(letter.date), MX, y, { width: CONTENT_W });
+      y += 16;
+    }
+
+    for (const paragraph of paragraphs) {
+      const h = heightOf(paragraph, SIZE.body);
+      doc.font(BODY).fontSize(SIZE.body).fillColor(INK);
+      doc.text(paragraph, MX, y, { width: CONTENT_W, lineGap: 2 });
+      y += h + 12;
+    }
+
+    doc.font(BODY).fontSize(9).fillColor(MUTED);
+    doc.text('1 / 1', MX, PAGE_H - 32, { width: CONTENT_W, align: 'center' });
+    doc.end();
+  });
+}
+
 async function run() {
-  const files = [
-    ['en', 'thomas-geraghty.pdf', false],
-    ['sv', 'thomas-geraghty-sv.pdf', false],
-    ['en', 'thomas-geraghty-extras.pdf', true],
-    ['sv', 'thomas-geraghty-sv-extras.pdf', true],
+  const publicDir = path.join(ROOT, 'public');
+  const files = PROFILE.downloads;
+  if (!files?.resume || !files?.coverLetter) {
+    throw new Error('profile.json is missing dated download filenames; run compile-data first');
+  }
+
+  const outputs = [
+    ['en', files.resume.en, false],
+    ['sv', files.resume.sv, false],
+    ['en', files.resume.enExtras, true],
+    ['sv', files.resume.svExtras, true],
   ];
-  for (const [language, filename, includeExtras] of files) {
-    await writePdf(language, path.join(ROOT, 'public', filename), { includeExtras });
+  const letters = [
+    ['en', files.coverLetter.en],
+    ['sv', files.coverLetter.sv],
+  ];
+  const keep = new Set([...outputs.map((item) => item[1]), ...letters.map((item) => item[1])]);
+  for (const name of fs.readdirSync(publicDir)) {
+    const stale =
+      /^(CV|Cover_Letter)_Thomas_Geraghty_/.test(name) || /^thomas-geraghty.*\.pdf$/i.test(name);
+    if (name.endsWith('.pdf') && stale && !keep.has(name)) {
+      fs.unlinkSync(path.join(publicDir, name));
+      console.log('Removed public/' + name);
+    }
+  }
+  for (const [language, filename, includeExtras] of outputs) {
+    await writePdf(language, path.join(publicDir, filename), { includeExtras });
+    console.log('Wrote public/' + filename);
+  }
+  for (const [language, filename] of letters) {
+    await writeCoverLetter(language, path.join(publicDir, filename));
     console.log('Wrote public/' + filename);
   }
 }
