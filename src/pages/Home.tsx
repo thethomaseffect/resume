@@ -1,37 +1,38 @@
-import { useState } from 'react';
+import { useState, type MouseEvent, type ReactNode } from 'react';
 import { useProfile } from '../App';
 import { pick, mailtoHref, telHref, formatRange, formatLivedMeta } from '../lib/format';
 import { skillBarColor } from '../lib/colors';
 import { SkillIcon } from '../lib/SkillIcon';
+import type { Company, Language, Profile, Skill } from '../lib/types';
 import './Home.css';
 
-function asset(path) {
+function asset(path: string | null | undefined): string | null {
   if (!path) return null;
   return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 }
 
-function shortUrl(url) {
+function shortUrl(url: string): string {
   return url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
 }
 
-function pdfLink(file) {
-  if (!file) return { href: '#', download: undefined };
-  return { href: asset(file), download: file };
+function pdfLink(file: string | undefined): { href: string; download?: string } {
+  if (!file) return { href: '#' };
+  return { href: asset(file) ?? '#', download: file };
 }
 
-function resumePdf(profile, language, includeExtras) {
-  const files = profile.downloads?.resume || {};
+function resumePdf(profile: Profile, language: Language, includeExtras: boolean) {
+  const files = profile.downloads?.resume;
   const file =
-    language === 'sv' ? (includeExtras ? files.svExtras : files.sv) : includeExtras ? files.enExtras : files.en;
+    language === 'sv' ? (includeExtras ? files?.svExtras : files?.sv) : includeExtras ? files?.enExtras : files?.en;
   return pdfLink(file);
 }
 
-function coverLetterPdf(profile, language) {
-  const files = profile.downloads?.coverLetter || {};
-  return pdfLink(language === 'sv' ? files.sv : files.en);
+function coverLetterPdf(profile: Profile, language: Language) {
+  const files = profile.downloads?.coverLetter;
+  return pdfLink(language === 'sv' ? files?.sv : files?.en);
 }
 
-function EnvelopeIcon({ size = 16 }) {
+function EnvelopeIcon({ size = 16 }: { size?: number }) {
   return (
     <svg className="contact-envelope" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
       <rect x="2.75" y="5.75" width="18.5" height="12.5" rx="1.4" fill="#fff" stroke="currentColor" strokeWidth="1.5" />
@@ -40,9 +41,25 @@ function EnvelopeIcon({ size = 16 }) {
   );
 }
 
-function ContactChip({ href, emoji, icon, label, value, copyValue, valueClassName }) {
+function ContactChip({
+  href,
+  emoji,
+  icon,
+  label,
+  value,
+  copyValue,
+  valueClassName,
+}: {
+  href: string;
+  emoji?: string;
+  icon?: ReactNode;
+  label: string;
+  value: string;
+  copyValue?: string;
+  valueClassName?: string;
+}) {
   const [copied, setCopied] = useState(false);
-  const copy = async (event) => {
+  const copy = async (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     event.stopPropagation();
     await navigator.clipboard.writeText(copyValue || value);
@@ -69,7 +86,19 @@ function ContactChip({ href, emoji, icon, label, value, copyValue, valueClassNam
 
 const SKILL_PREVIEW = 10;
 
-function SkillTagGroup({ title, skills, language, skillFilter, setSkillFilter }) {
+function SkillTagGroup({
+  title,
+  skills,
+  language,
+  skillFilter,
+  setSkillFilter,
+}: {
+  title: string;
+  skills: Skill[];
+  language: Language;
+  skillFilter: string;
+  setSkillFilter: (skillId: string) => void;
+}) {
   if (!skills.length) return null;
   return (
     <div className="tech-group">
@@ -109,7 +138,7 @@ function PalmTreeMark() {
   );
 }
 
-function CompanyLogo({ company, language }) {
+function CompanyLogo({ company, language }: { company: Company; language: Language }) {
   const name = pick(company.company, language);
   if (company.kind === 'career-break') {
     return <PalmTreeMark />;
@@ -120,7 +149,7 @@ function CompanyLogo({ company, language }) {
   return (
     <img
       className="company-logo"
-      src={asset(company.logo)}
+      src={asset(company.logo) ?? undefined}
       alt=""
       width="72"
       height="40"
@@ -153,7 +182,7 @@ export default function Home() {
       <section className="hero card">
         <img
           className="portrait"
-          src={asset(person.photo)}
+          src={asset(person.photo) ?? undefined}
           alt={person.name}
           width="280"
           height="340"
@@ -348,7 +377,7 @@ export default function Home() {
         <article className="education">
           <div className="job-header">
             {profile.education.logo ? (
-              <img className="company-logo" src={asset(profile.education.logo)} alt="" width="40" height="40" />
+              <img className="company-logo" src={asset(profile.education.logo) ?? undefined} alt="" width="40" height="40" />
             ) : null}
             <div>
               <h3>{pick(profile.education.award, language)}</h3>

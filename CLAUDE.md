@@ -1,6 +1,6 @@
 # Personal resume of Thomas Geraghty
 
-React + Vite static site, deployed like `for-sale`: push to `main` builds with GitHub Actions and publishes to GitHub Pages at `/resume/`. Production Vite `base` and the router basename are `/resume/`; local `npm run dev` uses `/` on `http://127.0.0.1:5173/`.
+React + Vite + TypeScript static site, deployed like `for-sale`: push to `main` builds with GitHub Actions and publishes to GitHub Pages at `/resume/`. Production Vite `base` and the router basename are `/resume/`; local `npm run dev` uses `/` on `http://127.0.0.1:5173/`.
 
 ## Content rules
 

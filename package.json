@@ -8,7 +8,8 @@
     "dev": "vite",
     "prebuild": "npm run compile",
     "compile": "node scripts/compile-data.js && node scripts/generate-pdf.js",
-    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "process-portrait": "node scripts/process-portrait.js",
     "fetch-logos": "node scripts/fetch-logos.js"
@@ -23,11 +24,13 @@
     "simple-icons": "^13.21.0"
   },
   "devDependencies": {
+    "@types/node": "^26.5.0",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "pdfkit": "^0.20.2",
     "sharp": "^0.34.5",
+    "typescript": "^7.0.2",
     "vite": "^5.0.8"
   }
 }

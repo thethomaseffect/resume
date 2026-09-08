@@ -5,8 +5,12 @@ import App from './App';
 import './index.css';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+const root = document.getElementById('root');
+if (!root) {
+  throw new Error('Missing #root');
+}
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <BrowserRouter basename={basename}>
       <App />

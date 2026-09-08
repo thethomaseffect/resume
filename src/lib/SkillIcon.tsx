@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+import type { SimpleIcon } from 'simple-icons';
 import {
   siTypescript,
   siJavascript,
@@ -62,7 +64,7 @@ import {
   siTampermonkey,
 } from 'simple-icons';
 
-const ICONS = {
+const ICONS: Record<string, SimpleIcon> = {
   typescript: siTypescript,
   javascript: siJavascript,
   nodedotjs: siNodedotjs,
@@ -129,7 +131,7 @@ const ICONS = {
 const CURSOR_PATH =
   'M4.2 2.8 19.6 12.1c.7.4.4 1.4-.4 1.4h-6.3c-.3 0-.5.1-.7.3l-4.6 5.8c-.6.7-1.8.3-1.8-.6V3.6c0-.8.9-1.2 1.4-.8z';
 
-function IconPlate({ size, children }) {
+function IconPlate({ size, children }: { size: number; children: ReactNode }) {
   return (
     <span className="skill-icon-plate" style={{ width: size + 4, height: size + 4 }} aria-hidden="true">
       {children}
@@ -137,7 +139,7 @@ function IconPlate({ size, children }) {
   );
 }
 
-export function SkillIcon({ slug, label, size = 16 }) {
+export function SkillIcon({ slug, label, size = 16 }: { slug?: string | null; label?: string; size?: number }) {
   if (slug === 'cursor') {
     return (
       <IconPlate size={size}>

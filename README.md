@@ -1,6 +1,6 @@
 # Personal resume site
 
-React + Vite static site for Thomas Geraghty’s CV, experience, and side projects.
+React + Vite + TypeScript static site for Thomas Geraghty’s CV, experience, and side projects.
 
 ## What this repo is
 
